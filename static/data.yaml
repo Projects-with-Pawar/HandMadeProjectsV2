@@ -1,0 +1,154 @@
+hardware:
+  EBike-Controller-System:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : project tech stack
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Basan%20Laddu%20500grm/6pices/Rs.500/-
+  
+  iot project:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : project tech stack
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+  iot:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : project tech stack
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+  AgroSense:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its an IoT based plant root 3 level soil moisture detector.   
+    tech : Django, SQL Database
+    domain : IoT, Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+
+
+
+software:
+  Video Subtitle:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+  
+  PlayTube:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+  Interactive Dashboard:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : Django, Stocks Database
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+  Yolo Drone Aeroplane Detection:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : project tech stack
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+
+
+
+
+
+
+
+
+
+
+info:
+  history: usdyvehjh history data
+  about: about data
+  usage: usage data
+  benefits: benefits data
+
+
+english_view:
+  info_view:
+
+    benifits:
+
+      Boosts gut health: 
+        img_path : static\images\info-imgs\Boosts gut health (1).jpeg
+        desc : Contains probiotics to optimize digestion, nutrient absorption, and immunity
+      Detoxifies the body :
+        img_path : static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png
+        desc : Liver-supportive acids promote natural detoxification
+      Manages inflammation :
+        img_path : static\images\info-imgs\manages-inflammation.png
+        desc : Powerful antioxidants combat inflammatory conditions
+      Supports mental health :
+        img_path : static\images\info-imgs\Supports mental health.png
+        desc : Impacts gut-brain axis and stress responses
+      Aids weight loss :
+        img_path : static\images\info-imgs\Aids weight loss.jpeg
+        desc : Promotes fullness, balances blood sugar, and boosts metabolism
+      Prevents disease :
+        img_path : static\images\info-imgs\Prevents disease.jpeg
+        desc : Antimicrobial and anti-cancer properties protect overall health
+      Slows aging :
+        img_path : static\images\info-imgs\Slows aging (1).jpeg
+        desc : Antioxidants reduce effects of aging at the cellular level
+      Eases allergies :
+        img_path : static\images\info-imgs\man-is-allergies.png
+        desc : Modulates immune responses for alleviation of allergy symptoms
+      Supports heart health :
+        img_path : static\images\info-imgs\heart health.png
+        desc : Reduces blood pressure and balances cholesterol levels
+      Aid in Type 2 Diabetes Management :
+        img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
+        desc : Research suggests that kombucha may help to manage blood sugar levels, which could be beneficial for individuals with type 2 diabetes.
+
+hindi_view:
+  info_view:
+
+    benifits:
+
+      पाचन स्वास्थ्य को बढ़ावा: 
+        img_path : static\images\info-imgs\Boosts gut health (1).jpeg
+        desc : पाचन, पोषण अवशेषण और प्रतिरक्षा को अच्छा बनाए रखने के लिए प्रोबायोटिक्स होते हैं
+      शरीर की स्वच्छीकरण :
+        img_path : static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png
+        desc : जिगर को समर्थन करने वाले एसिड नैसर्गिक शुद्धीकरण को बढ़ावा देते हैं
+      सूजन का प्रबंधन :
+        img_path : static\images\info-imgs\manages-inflammation.png
+        desc : शक्तिशाली एंटीऑक्सीडेंट्स आपत्तिकारी स्थितियों से निपट सकते हैं
+      मानसिक स्वास्थ्य का समर्थन :
+        img_path : static\images\info-imgs\Supports mental health.png
+        desc : पाचन-मस्तिष्क सम्बंध और तनाव प्रतिक्रियाएँ में प्रभाव
+      वजन घटाने में मदद :
+        img_path : static\images\info-imgs\Aids weight loss.jpeg
+        desc : पूर्णता को बढ़ावा देने, रक्त शर्करा को संतुलित करने और चर्बी जलाने का समर्थन करने में मदद करता है
+      रोग की रोकथाम :
+        img_path : static\images\info-imgs\Prevents disease.jpeg
+        desc : एंटीमाइक्रोबियल और एंटी-कैंसर गुण पूरे स्वास्थ्य की सुरक्षा कर सकते हैं
+      आगे की ओर बढ़ावा :
+        img_path : static\images\info-imgs\Slows aging (1).jpeg
+        desc : एंटीऑक्सीडेंट्स कोशिकाओं के स्तर पर बूट करते हैं
+      एलर्जी को आसानी से करना :
+        img_path : static\images\info-imgs\man-is-allergies.png
+        desc : एलर्जी के लक्षणों को कम करने के लिए प्रतिरक्षा प्रतिक्रियाएँ में सुधार
+      हृदय स्वास्थ्य का समर्थन :
+        img_path : static\images\info-imgs\heart health.png
+        desc : रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
+      Type 2 डायबिटीज प्रबंधन में सहायक :
+        img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
+        desc : रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है.
