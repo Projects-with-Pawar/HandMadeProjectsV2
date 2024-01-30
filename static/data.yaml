@@ -1,33 +1,97 @@
 hardware:
   EBike-Controller-System:
     img_path : static\project_img\skeleton.jpg
-    desc : project description
-    tech : project tech stack
+    desc : ESP32 based eBike controller system
+    tech : Real Time Embedded System
     domain : IoT
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Basan%20Laddu%20500grm/6pices/Rs.500/-
   
-  iot project:
+  Weather Station:
     img_path : static\project_img\skeleton.jpg
-    desc : project description
-    tech : project tech stack
+    desc : ESP32 based Weather Station using DHT11, Oled, etc
+    tech : ThingsSpeak, Static Website
     domain : IoT
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
 
   
-  iot:
+  Smart Home Controlling System:
     img_path : static\project_img\skeleton.jpg
-    desc : project description
-    tech : project tech stack
+    desc : ESP32 based 4 Appliance Controller with home env sensing
+    tech : ThingsSpeak, Static Website, Mobile App
     domain : IoT
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
 
-  
-  AgroSense:
+  Radar System:
     img_path : static\project_img\skeleton.jpg
-    desc : Its an IoT based plant root 3 level soil moisture detector.   
-    tech : Django, SQL Database
-    domain : IoT, Web App
-    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
+    desc : ESP32 based Radar , show the detected objects
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Smart Irrigation System:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based soil moisture sensing and watering
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Digital Clock:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based Digital Clock using RTC and Oled Screen
+    tech : Real Time Embedded System
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Smart Parking System:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, detect 4 parking slot and car count 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Pet Feeder:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, able to feed pet auto and with on click 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Smart Attendence System:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, real time student attendence with lecture, roll no, etc 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Smart Lock:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, keypad lock 
+    tech : Real Time Embedded System
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Finger Print Door Lock System:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, real time lock 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  Smart Dustbin:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, Smart Dustbin 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+
+  
+  # AgroSense:
+    # img_path : static\project_img\skeleton.jpg
+    # desc : Its an IoT based plant root 3 level soil moisture detector.   
+    # tech : Django, SQL Database
+    # domain : IoT, Web App
+    # whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
 
   
 
