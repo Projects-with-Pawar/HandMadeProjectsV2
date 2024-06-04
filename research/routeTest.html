@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+    <style>
+        section {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the URL parameters
+            var params = new URLSearchParams(window.location.search);
+            // Select the element to display the message
+            var projectdetails = document.getElementById("projectdetails");
+
+            
+            // Check if the 'path' parameter is 'software'
+            if (params.get('project') === 'software') {
+                projectdetails.textContent = "Software";
+                softwareSection.style.display = 'block';
+            } 
+            else {
+                //messageElement.textContent = "Hello World";
+                projectdetails.style.display = 'block';
+            }
+        });
+    </script>
+</head>
+<body>
+    <section id="projectdetails">This is the software section</section>
+</body>
+</html>

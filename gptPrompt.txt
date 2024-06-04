@@ -1,0 +1,94 @@
+hardware project:
+
+
+  Smart Attendence System:
+    img_path : static\project_img\hardware\Smart Home Controlling System\img1.png    
+    desc : Smart Home Control: Mobile app, website, monitors temperature, humidity, controls appliances.
+    tech : ESP32, Arduino, ThingsSpeak, Static Website, Mobile App, Servo
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartAttendenceSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br><br>
+
+        The Transmission Line Fault Detection system is an advanced solution designed to enhance the reliability and safety of power transmission networks. This system can accurately detect power faults in real-time, ensuring quick identification and response to potential issues. Upon detecting a fault, the system immediately sends alerts to the server, enabling rapid intervention and minimizing downtime.
+        <br>
+        Key features include automatic cutoff to prevent damage to equipment and ensure safety. The system also monitors voltage and current levels continuously, providing valuable data for maintaining optimal performance. Fault data is logged for detailed analysis, helping in understanding fault patterns and improving future fault management strategies.
+        <br>
+        Additionally, the system offers real-time fault location, allowing for precise identification of the fault's position within the transmission line. This feature supports quick recovery and restoration of services, minimizing the impact on consumers. Remote management and control capabilities enable operators to oversee and manage the system from any location, integrating seamlessly with smart grid systems to enhance overall grid efficiency.
+        <br>
+        Designed with both reliability and safety in mind, the Transmission Line Fault Detection system represents a significant advancement in power network management, providing robust solutions for maintaining uninterrupted and efficient power supply.
+
+        <br>
+        <br>
+
+        # Project Features:
+        ======================<br><br>
+
+        - Detects power faults.
+        - Sends alerts to the server.
+        - Performs automatic cutoff.
+        - Monitors voltage and current levels.
+        - Logs fault data for analysis.
+        - Provides real-time fault location.
+        - Supports remote management and control.
+        - Ensures quick recovery and restoration.
+        - Integrates with smart grid systems.
+        - Enhances system reliability and safety.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Traditional power transmission systems struggle with timely fault detection, alerts, and automated responses, leading to prolonged outages and safety risks. An advanced, automated solution is needed for real-time fault management.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+        
+    links: 
+      - static\project_img\hardware\Radar System\img1.jpeg
+      - static\project_img\hardware\Smart Home Controlling System\oled.jpeg
+      - static\project_img\hardware\Smart Home Controlling System\esp32.jpeg
+      - static\project_img\hardware\Smart Home Controlling System\dht11.jpeg
+
+
+
+
+
+
+
+
+

@@ -6,3 +6,7 @@ HandMadeProjects
 
 # Hardware Section
 <img src="https://github.com/AtharvaPawar456/HandMadeProjects/blob/main/static/project_img/hardware-section.png" alt="Image 1" height="250">
+
+
+
+    [Link to OpenAI](https://www.openai.com)

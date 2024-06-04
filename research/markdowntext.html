@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <title>Document</title>
+    <style>md-block { white-space: pre; font-family: monospace; }</style>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+
+
+</head>
+<body>
+    <div id="msg">Loading...</div>
+
+    <md-block>
+        # Heading
+        Some *embedded* Markdown which `md-block` can convert for you!
+    </md-block>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var converter = new showdown.Converter();
+            var text = '\n# Sample Project\n\nThis is a simple project description.\n\n- Feature 1\n- Feature 2\n- Feature 3\n\nLearn More\n';
+            var html = converter.makeHtml(text);
+            document.getElementById('msg').innerHTML = html;
+        });
+    </script>
+</body>
+</html>
