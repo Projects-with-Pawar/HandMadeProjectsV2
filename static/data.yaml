@@ -1,1 +1,1027 @@
-hello
+hardware:
+  EBike Speed Controller System:
+    img_path : static\project_img\hardware\EBike Speed Controller System\img2.png
+    desc : Low-cost ESP32 eBike controller with speed display and efficient motor speed control.
+    tech : ESP32, Motor, Oled, Arduino
+    domain : Embedded Sys
+    markdowndetails : |
+
+        # Project Description:
+        ==============================<br>
+        The ESP32-based eBike controller system is designed to offer a low-cost, efficient, and user-friendly solution for electric bike enthusiasts. This innovative system utilizes the powerful and versatile ESP32 microcontroller to manage and control the speed of the eBike, providing a seamless and enjoyable riding experience. The key feature of this system is its ability to display real-time speed information on a screen, ensuring that riders can monitor their speed effortlessly and stay informed about their riding performance.
+
+        The controller is engineered to offer precise and responsive motor speed control, allowing riders to adjust their speed smoothly and efficiently. This enhances the overall safety and comfort of the ride, making it suitable for various terrains and riding conditions. The system is designed with cost-effectiveness in mind, making it an affordable option for eBike manufacturers and DIY enthusiasts alike.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        ====================<br>
+        Current eBike controllers are expensive, lack efficient motor speed control, and do not provide real-time speed display, necessitating a low-cost, efficient, and user-friendly solution.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==================<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:
+        =======================<br>
+        - --> Project Hardware
+        - --> Project Report
+    links: 
+      - static\project_img\hardware\EBike Speed Controller System\img1.png
+      - static\project_img\hardware\EBike Speed Controller System\img2.png
+      - static\project_img\hardware\EBike Speed Controller System\img3.png
+      - static\project_img\hardware\general parts\motor12v.png
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20EBikeSpeedControllerSystem
+  
+  Weather Station:
+    img_path : static\project_img\hardware\Weather Station\img-1.jpg
+    desc : ESP32 based Weather Station using DHT11, OLED, real-time weather data, low-cost, web visibility.
+    tech : ESP32, Motor, Oled, Arduino, ThingsSpeak, Static Website
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20WeatherStation
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br>
+        The ESP32-based Weather Station is a comprehensive solution for monitoring real-time weather conditions with accuracy and efficiency. Utilizing the DHT11 sensor for temperature and humidity measurement and an OLED display for data visualization, this system offers a user-friendly interface for accessing essential weather information. Key parameters such as temperature, humidity, wind speed, and wind direction are continuously monitored, providing users with up-to-date data for informed decision-making.
+        <br><br>
+        Designed with cost-effectiveness and ease of installation in mind, the Weather Station offers a low-cost solution suitable for various applications. Its compact design and simple setup make it ideal for both personal and professional use, whether for home weather monitoring, agricultural applications, or educational purposes.
+        <br><br>
+        One of the standout features of this Weather Station is its integration with a custom website, where the collected weather data is displayed in real-time. This web visibility enhances accessibility, allowing users to remotely access weather information from anywhere with an internet connection. Whether checking weather conditions before outdoor activities, optimizing farming practices, or conducting research, the ESP32 Weather Station provides a reliable and efficient solution.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Current weather monitoring systems lack affordability, efficiency, and web integration, hindering accessibility to real-time weather data. A low-cost, efficient, and web-visible solution is needed for comprehensive weather monitoring.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report        
+    links: 
+      - static\project_img\hardware\Weather Station\img-1.jpg
+      - static\project_img\hardware\general parts\oled.jpeg
+      - static\project_img\hardware\general parts\dht11.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+
+  
+  Smart Home Controlling System:
+    img_path : static\project_img\hardware\Smart Home Controlling System\img1.png    
+    desc : Mobile app, website, monitors temperature, humidity, controls appliances.
+    tech : ESP32, Arduino, ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartHomeControllingSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br>
+        The Smart Home Controlling System is a versatile solution for remotely managing household appliances and monitoring environmental conditions. With the capability to control up to four appliances via a mobile app and website interface, users can easily adjust settings and automate routines from anywhere with an internet connection. This system provides convenience and flexibility, allowing users to turn appliances on or off, set timers, and create personalized schedules to optimize energy usage and enhance home automation.
+        <br>
+        In addition to appliance control, the system also offers real-time monitoring of room temperature and humidity levels. By providing insights into indoor environmental conditions, users can ensure comfort and well-being, as well as make informed decisions regarding heating, cooling, and ventilation systems.
+        <br>
+        The Smart Home Controlling System features a custom-designed website and mobile app, offering intuitive interfaces for seamless user experience. Utilizing ThingSpeak as an online database ensures secure storage and accessibility of data, enabling users to retrieve historical records and analyze trends over time.
+        <br>
+        With its comprehensive functionality and user-friendly interfaces, this system transforms any home into a smart, connected environment, enhancing convenience, comfort, and energy efficiency.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Existing home automation systems lack comprehensive control over appliances and environmental monitoring, hindering convenience and energy efficiency. A solution with mobile app and website control, plus temperature/humidity monitoring, is needed.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+
+    links: 
+      - static\project_img\hardware\Smart Home Controlling System\img1.png
+      - static\project_img\hardware\general parts\oled.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+      - static\project_img\hardware\general parts\dht11.jpeg
+
+  Radar System:
+    img_path : static\project_img\hardware\Radar System\img1.jpeg
+    desc : Detects objects, aims servo gun, logs and predicts detection coordinates.
+    tech : ThingsSpeak, Static Website, Mobile App, Servo soft gun
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20RadarSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br>
+        The Radar System is an advanced object detection and tracking solution designed to enhance security and surveillance capabilities. Utilizing sophisticated radar technology, this system accurately detects objects within its sensing area and determines their precise locations. Once an object is detected, the system dynamically points a servo gun towards the target, ensuring immediate response to potential threats.
+        <br>
+        A key feature of this Radar System is its ability to log data with time stamps, creating a comprehensive record of all detected objects and their movements. This data is then uploaded to a secure server, where it can be accessed and analyzed in real-time. By examining the object detection patterns and coordinates, the system is capable of predicting future object locations, enabling preemptive actions and improved situational awareness.
+        <br>
+        The system's robust design and accurate detection capabilities make it suitable for a wide range of applications, including military defense, perimeter security, and automated surveillance. Its ability to provide real-time data logging and predictive analytics ensures a proactive approach to security, enhancing both efficiency and effectiveness. With this Radar System, users can achieve a higher level of precision and reliability in object detection and response.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Current surveillance systems lack precise object detection, tracking, and predictive capabilities, limiting response efficiency. An advanced radar system with servo aiming and predictive analytics is required for enhanced security and surveillance.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+
+    links: 
+      - static\project_img\hardware\Radar System\img1.jpeg
+      - static\project_img\hardware\general parts\oled.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+      - static\project_img\hardware\general parts\dht11.jpeg
+
+  Smart Irrigation System:
+    img_path : static\project_img\hardware\Smart Irrigation System\img1.png
+    desc : Detects soil moisture, controls relay, uploads data, predicts dryness.
+    tech : ThingsSpeak, Static Website, Mobile App, Relay, ESP32
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartIrrigationSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br>
+        The Smart Irrigation System is an innovative solution designed to optimize water usage and enhance agricultural efficiency. By accurately detecting soil moisture levels, this system can automatically turn the irrigation pump on or off, ensuring that plants receive the right amount of water precisely when needed. This automated control helps in conserving water, reducing manual labor, and promoting healthier plant growth.
+        <br>
+        Key features of the system include real-time data logging and server uploads. Soil moisture levels and the pump's ON/OFF status are continuously monitored and recorded, providing valuable insights into irrigation patterns and soil conditions. This data is uploaded to a secure server, where users can access it remotely for analysis and decision-making.
+        <br>
+        The Smart Irrigation System also incorporates predictive analytics to forecast the wet-to-dry interval time of the soil. By analyzing historical data, the system can predict how quickly the soil will dry out, allowing for more proactive irrigation scheduling. This ensures that plants never suffer from water stress, maintaining optimal soil moisture levels at all times.
+        <br>
+        Designed for ease of use and efficiency, the Smart Irrigation System is ideal for both small-scale gardens and large agricultural fields. It represents a significant step forward in sustainable farming practices, combining technology with agriculture for better resource management.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Traditional irrigation systems lack automated moisture detection, efficient water management, and predictive capabilities, leading to water wastage and suboptimal plant care. A smart, predictive, and automated solution is needed.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+        
+    links: 
+      - static\project_img\hardware\Smart Irrigation System\img1.png
+      - static\project_img\hardware\general parts\soil moisture.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+      - static\project_img\hardware\general parts\dht11.jpeg
+
+
+
+
+  Smart Parking System:
+    img_path : static\project_img\hardware\Smart Parking System\iot-based-smart-parking-system-project.png
+    desc : Detects slots, displays availability, automates gate, enables booking/payment.
+    tech : ESP32, Arduino, ThingsSpeak, Static Website, Mobile App, Servo
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartParkingSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br><br>
+
+        - Detects 4 parking slots.
+        - Displays available slots.
+        - Opens gate bar if an incoming car is detected and slots are available.
+        - Displays slots on mobile app and website.
+        - Enables slot booking with integrated payment.
+        - Supports card payment. (TEST Mode)
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Traditional parking systems lack real-time slot detection, automated gate control, and integrated booking/payment, leading to inefficiency and user inconvenience. A smart, automated solution with booking and payment features is needed.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM : Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+        
+    links: 
+      - static\project_img\hardware\Smart Parking System\iot-based-smart-parking-system-project.png
+      - static\project_img\hardware\general parts\oled.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+      - static\project_img\hardware\general parts\ir module.jpeg
+
+
+
+  Smart Attendence System:
+    img_path : static\project_img\hardware\Smart Attendence System\img4.png
+    desc : Registers students/teachers, marks attendance, tracks timetable, holidays. 
+    tech : Website, ESP32, battery, 4x4keypad, Oled
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartAttendenceSystem
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br><br>
+
+        - Registers students.
+        - Registers teachers.
+        - Marks attendance.
+        - Registers the timetable.
+        - Tracks student attendance rates.
+        - Tracks holidays.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Current attendance systems lack efficiency in student/teacher registration, real-time tracking, and comprehensive reporting, leading to administrative challenges. A smart, automated solution is needed for streamlined attendance and timetable management.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+        
+    links: 
+      - static\project_img\hardware\Smart Attendence System\img4.png
+      - static\project_img\hardware\Smart Attendence System\img1.png
+      - static\project_img\hardware\Smart Attendence System\img2.png
+      - static\project_img\hardware\Smart Attendence System\img3.png
+
+  Smart Lock:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, keypad lock 
+    tech : Real Time Embedded System
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartAttendenceSystem
+
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+  Transmission Line Fault Detection:
+    img_path : static\project_img\hardware\Transmission Line Fault Detection\img1.png
+    desc : Detects faults, alerts server, auto cut-off, monitors parameters.
+    tech : AC Bulb, microcontroller, alert notification, auto power cutoff
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20TransmissionLineFaultDetection
+
+    markdowndetails : |
+
+        # Project Description:
+        ======================<br><br>
+
+        The Transmission Line Fault Detection system is an advanced solution designed to enhance the reliability and safety of power transmission networks. This system can accurately detect power faults in real-time, ensuring quick identification and response to potential issues. Upon detecting a fault, the system immediately sends alerts to the server, enabling rapid intervention and minimizing downtime.
+        <br>
+        Key features include automatic cutoff to prevent damage to equipment and ensure safety. The system also monitors voltage and current levels continuously, providing valuable data for maintaining optimal performance. Fault data is logged for detailed analysis, helping in understanding fault patterns and improving future fault management strategies.
+        <br>
+        Additionally, the system offers real-time fault location, allowing for precise identification of the fault's position within the transmission line. This feature supports quick recovery and restoration of services, minimizing the impact on consumers. Remote management and control capabilities enable operators to oversee and manage the system from any location, integrating seamlessly with smart grid systems to enhance overall grid efficiency.
+        <br>
+        Designed with both reliability and safety in mind, the Transmission Line Fault Detection system represents a significant advancement in power network management, providing robust solutions for maintaining uninterrupted and efficient power supply.
+
+        <br>
+        <br>
+
+        # Project Features:
+        ======================<br><br>
+
+        - --> Detects power faults.
+        - --> Sends alerts to the server.
+        - --> Performs automatic cutoff.
+        - --> Monitors voltage and current levels.
+        - --> Logs fault data for analysis.
+        - --> Provides real-time fault location.
+        - --> Supports remote management and control.
+        - --> Ensures quick recovery and restoration.
+        - --> Integrates with smart grid systems.
+        - --> Enhances system reliability and safety.
+
+        <br>
+        <br>
+
+
+        # Problem Statement:
+        =====================<br>
+        Traditional power transmission systems struggle with timely fault detection, alerts, and automated responses, leading to prolonged outages and safety risks. An advanced, automated solution is needed for real-time fault management.
+
+
+        <br>
+        <br>
+
+        ## Report Contents:
+        ==============<br>
+        - --> Components List (BOM: Bill of Material)
+        - --> Block Diagram
+        - --> Flow Chart
+        - --> Components : Name, Images, Details
+        - --> Circuit Diagram
+        - --> Problem Statement
+        - --> Abstract
+        - --> Introduction
+        - --> Methodology
+        - --> Challenges and Solutions
+        - --> Performance Analysis
+        - --> Advantages
+        - --> Limitation
+        - --> Application
+        - --> Future Scope
+        - --> Conclusion
+        - --> Output Images
+
+        <br>
+        <br>
+
+        ## Project Deliverables:<br>
+        ================
+        - --> Project Hardware
+        - --> Project Report
+        
+    links: 
+      - static\project_img\hardware\Transmission Line Fault Detection\img1.png
+      - static\project_img\hardware\general parts\ac bulb.jpeg
+      - static\project_img\hardware\general parts\esp32.jpeg
+      - static\project_img\hardware\general parts\relay.jpeg
+
+  Finger Print Door Lock System:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, real time lock 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+  Smart Dustbin:
+    img_path : static\project_img\skeleton.jpg
+    desc : ESP32 based, Smart Dustbin 
+    tech : ThingsSpeak, Static Website, Mobile App
+    domain : IoT
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+
+  
+  # AgroSense:
+    # img_path : static\project_img\skeleton.jpg
+    # desc : Its an IoT based plant root 3 level soil moisture detector.   
+    # tech : Django, SQL Database
+    # domain : IoT, Web App
+    # whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
+
+  
+
+
+
+software:
+  Video Subtitle:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+  
+  PlayTube:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+  
+  Interactive Dashboard:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : Django, Stocks Database
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Rava%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+  
+  Yolo Drone Aeroplane Detection:
+    img_path : static\project_img\skeleton.jpg
+    desc : project description
+    tech : project tech stack
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20_Rava%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+
+
+
+
+
+mechanical:
+  mechVideo Subtitle:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+  
+  mechPlayTube:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+
+simulation:
+  simulation1:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+  
+  simulation456:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+
+
+
+
+science:
+  science123:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+  
+  science456:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+      <br>
+      **Bold text** and *italic text*.
+      [Link to OpenAI](https://www.openai.com)
+
+
+
+
+
+
+origami:
+  origami123:
+    img_path : static\project_img\software\video-subtitle.png
+    desc : We can add video + subtitle & then can play it (Video with subtitle)
+    tech : Django
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20AgroSense%20Project%20pls%20share%20more%20info
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+  
+  origami456:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+
+  origami786:
+    img_path : static\project_img\skeleton.jpg
+    desc : Its is a Clone of YouTube.
+    tech : Django, Scraped Youtube Data 
+    domain : Web App
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Methi%20Laddu%20500grm/6pices/Rs.500/-
+    markdowndetails : |
+
+      # Sample Markdown Content
+      ===============	
+
+      ## This is a sub-heading
+
+      - --> Bullet point 1
+      - --> Bullet point 2
+      - --> Bullet point 3
+
+      <br>
+
+      1. First item
+      2. Second item
+      3. Third item
+      4. Fourth item
+
+      **Bold text** and *italic text*.
+
+      [Link to OpenAI](https://www.openai.com)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+info:
+  history: usdyvehjh history data
+  about: about data
+  usage: usage data
+  benefits: benefits data
+
+
+english_view:
+  info_view:
+
+    benifits:
+
+      Boosts gut health: 
+        img_path : static\images\info-imgs\Boosts gut health (1).jpeg
+        desc : Contains probiotics to optimize digestion, nutrient absorption, and immunity
+      Detoxifies the body :
+        img_path : static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png
+        desc : Liver-supportive acids promote natural detoxification
+      Manages inflammation :
+        img_path : static\images\info-imgs\manages-inflammation.png
+        desc : Powerful antioxidants combat inflammatory conditions
+      Supports mental health :
+        img_path : static\images\info-imgs\Supports mental health.png
+        desc : Impacts gut-brain axis and stress responses
+      Aids weight loss :
+        img_path : static\images\info-imgs\Aids weight loss.jpeg
+        desc : Promotes fullness, balances blood sugar, and boosts metabolism
+      Prevents disease :
+        img_path : static\images\info-imgs\Prevents disease.jpeg
+        desc : Antimicrobial and anti-cancer properties protect overall health
+      Slows aging :
+        img_path : static\images\info-imgs\Slows aging (1).jpeg
+        desc : Antioxidants reduce effects of aging at the cellular level
+      Eases allergies :
+        img_path : static\images\info-imgs\man-is-allergies.png
+        desc : Modulates immune responses for alleviation of allergy symptoms
+      Supports heart health :
+        img_path : static\images\info-imgs\heart health.png
+        desc : Reduces blood pressure and balances cholesterol levels
+      Aid in Type 2 Diabetes Management :
+        img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
+        desc : Research suggests that kombucha may help to manage blood sugar levels, which could be beneficial for individuals with type 2 diabetes.
+
+hindi_view:
+  info_view:
+
+    benifits:
+
+      पाचन स्वास्थ्य को बढ़ावा: 
+        img_path : static\images\info-imgs\Boosts gut health (1).jpeg
+        desc : पाचन, पोषण अवशेषण और प्रतिरक्षा को अच्छा बनाए रखने के लिए प्रोबायोटिक्स होते हैं
+      शरीर की स्वच्छीकरण :
+        img_path : static\images\info-imgs\detoxifies-the-body-maleimage-more-positive-way-902119840.png
+        desc : जिगर को समर्थन करने वाले एसिड नैसर्गिक शुद्धीकरण को बढ़ावा देते हैं
+      सूजन का प्रबंधन :
+        img_path : static\images\info-imgs\manages-inflammation.png
+        desc : शक्तिशाली एंटीऑक्सीडेंट्स आपत्तिकारी स्थितियों से निपट सकते हैं
+      मानसिक स्वास्थ्य का समर्थन :
+        img_path : static\images\info-imgs\Supports mental health.png
+        desc : पाचन-मस्तिष्क सम्बंध और तनाव प्रतिक्रियाएँ में प्रभाव
+      वजन घटाने में मदद :
+        img_path : static\images\info-imgs\Aids weight loss.jpeg
+        desc : पूर्णता को बढ़ावा देने, रक्त शर्करा को संतुलित करने और चर्बी जलाने का समर्थन करने में मदद करता है
+      रोग की रोकथाम :
+        img_path : static\images\info-imgs\Prevents disease.jpeg
+        desc : एंटीमाइक्रोबियल और एंटी-कैंसर गुण पूरे स्वास्थ्य की सुरक्षा कर सकते हैं
+      आगे की ओर बढ़ावा :
+        img_path : static\images\info-imgs\Slows aging (1).jpeg
+        desc : एंटीऑक्सीडेंट्स कोशिकाओं के स्तर पर बूट करते हैं
+      एलर्जी को आसानी से करना :
+        img_path : static\images\info-imgs\man-is-allergies.png
+        desc : एलर्जी के लक्षणों को कम करने के लिए प्रतिरक्षा प्रतिक्रियाएँ में सुधार
+      हृदय स्वास्थ्य का समर्थन :
+        img_path : static\images\info-imgs\heart health.png
+        desc : रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है
+      Type 2 डायबिटीज प्रबंधन में सहायक :
+        img_path : static\images\info-imgs\Type 2 Diabetes.jpeg
+        desc : रक्तचाप को कम करने और कॉलेस्ट्रॉल स्तर को संतुलित करने में मदद करता है.
