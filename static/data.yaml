@@ -388,6 +388,8 @@ hardware:
     img_path : static\project_img\hardware\Smart Attendence System\img4.png
     desc : Registers students/teachers, marks attendance, tracks timetable, holidays. 
     tech : Website, ESP32, battery, 4x4keypad, Oled
+    domain : IoT
+
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20SmartAttendenceSystem
 
     markdowndetails : |
