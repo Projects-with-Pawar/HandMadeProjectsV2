@@ -114,7 +114,7 @@
             <a class="flex items-center space-x-2" href="index.html">
               <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2"> 
                 <!-- Adjust height and width as needed -->
-              <span class="text-2xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
+              <span class="md:text-2xl text-xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
             </a>
         
             <!-- Tabs on the Right
@@ -194,30 +194,30 @@
 
     <!-- Software -->
     <section class="mysection md:mx-20 mt-20 my-4" id="software">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-4">Software Projects</div>
+      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Software Projects</div>
 
-      <div id="softwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-10"><!-- Dynamic content will be added here --></div>
+      <div id="softwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
     </section>
 
     <!-- Hardware -->
     <section class="mysection md:mx-20 mt-20 my-4" id="hardware">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-4">Hardware Projects</div>
+      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Hardware Projects</div>
 
-      <div id="hardwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-10"><!-- Dynamic content will be added here --></div>
+      <div id="hardwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
     </section>
 
     <!-- Mechanical -->
     <section class="mysection md:mx-20 mt-20 my-4" id="mechanical">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-4">Mechanical Projects</div>
+      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Mechanical Projects</div>
 
-      <div id="mechanicalItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-10"><!-- Dynamic content will be added here --></div>
+      <div id="mechanicalItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
     </section>
 
     <!-- Simulation -->
     <section class="mysection md:mx-20 mt-20 my-4" id="simulation">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-4">Simulation Projects</div>
+      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Simulation Projects</div>
 
-      <div id="simulationItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-10"><!-- Dynamic content will be added here --></div>
+      <div id="simulationItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
     </section>
 
 
@@ -230,7 +230,7 @@
 
     <!-- Mass Retail Order -->
     <section class="pt-20">
-      <div class="text-mono text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-red-500">For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone + <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
+      <div class="text-mono text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-white hover:rounded-md hover:bg-gradient-to-r hover:from-indigo-400 hover:via-indigo-800 hover:to-indigo-600">For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone + <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
     </section>
 
     <!-- Footer -->
@@ -267,18 +267,18 @@
 
           // Create the HTML structure for each item
           const itemHtml = `
-            <div class="rounded-md border border-gray-700 my-2 md:my-10 p-4 hover:shadow-md">
-              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-4"> 
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
               <div class="text-xl font-bold text-center h-14">${itemName}</div>
-              <div class="my-4 h-28">
-                <div class="text-left"><b>Desc :</b> ${item.desc} </div>
-                <div class="text-left"><b>Tech :</b> ${item.tech}</div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
               <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
                 
                 <a href="projectDetails.html?domain=hardware&project=${itemName}">
-                  <b>${item.domain}</b>
-                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl border px-2 py-1 rounded-md border-2 border-green-400"></i>
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
                 </a>
               </div>
             </div>
@@ -297,18 +297,18 @@
 
           // Create the HTML structure for each item
           const itemHtml = `
-            <div class="rounded-md border border-gray-700 my-2 md:my-10 p-4 hover:shadow-md">
-              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-4"> 
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
               <div class="text-xl font-bold text-center h-14">${itemName}</div>
-              <div class="my-4 h-28">
-                <div class="text-left"><b>Desc :</b> ${item.desc} </div>
-                <div class="text-left"><b>Tech :</b> ${item.tech} </div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
               <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
                 
-                <a href="projectDetails.html?domain=software&project=${itemName}">
-                  <b>${item.domain}</b>
-                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl border px-2 py-1 rounded-md border-2 border-green-400"></i>
+                <a href="projectDetails.html?domain=hardware&project=${itemName}">
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
                 </a>
               </div>
             </div>
@@ -326,18 +326,18 @@
 
           // Create the HTML structure for each item
           const itemHtml = `
-            <div class="rounded-md border border-gray-700 my-2 md:my-10 p-4 hover:shadow-md">
-              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-4"> 
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
               <div class="text-xl font-bold text-center h-14">${itemName}</div>
-              <div class="my-4 h-28">
-                <div class="text-left"><b>Desc :</b> ${item.desc} </div>
-                <div class="text-left"><b>Tech :</b> ${item.tech} </div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
               <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
                 
-                <a href="projectDetails.html?domain=mechanical&project=${itemName}">
-                  <b>${item.domain}</b>
-                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl border px-2 py-1 rounded-md border-2 border-green-400"></i>
+                <a href="projectDetails.html?domain=hardware&project=${itemName}">
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
                 </a>
               </div>
             </div>
@@ -355,18 +355,18 @@
 
           // Create the HTML structure for each item
           const itemHtml = `
-            <div class="rounded-md border border-gray-700 my-2 md:my-10 p-4 hover:shadow-md">
-              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-4"> 
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
               <div class="text-xl font-bold text-center h-14">${itemName}</div>
-              <div class="my-4 h-28">
-                <div class="text-left"><b>Desc :</b> ${item.desc} </div>
-                <div class="text-left"><b>Tech :</b> ${item.tech} </div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
               <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
                 
-                <a href="projectDetails.html?domain=simulation&project=${itemName}">
-                  <b>${item.domain}</b>
-                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl border px-2 py-1 rounded-md border-2 border-green-400"></i>
+                <a href="projectDetails.html?domain=hardware&project=${itemName}">
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
                 </a>
               </div>
             </div>
