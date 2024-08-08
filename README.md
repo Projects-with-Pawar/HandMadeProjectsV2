@@ -1,12 +1,13 @@
 # HandMadeProjects
 HandMadeProjects
 
-# Sofware Section
-<img src="https://github.com/AtharvaPawar456/HandMadeProjects/blob/main/static/project_img/software-section.png" alt="Image 1" height="250">
 
-# Hardware Section
-<img src="https://github.com/AtharvaPawar456/HandMadeProjects/blob/main/static/project_img/hardware-section.png" alt="Image 1" height="250">
+# Website Link 
+	- https://sprl.in/hmp24
+
+# Categories:
+    - Sofware Section
+    - Hardware Section
 
 
-
-    [Link to OpenAI](https://www.openai.com)
+<!-- <img src="https://github.com/AtharvaPawar456/HandMadeProjects/blob/main/static/project_img/hardware-section.png" alt="Image 1" height="250"> -->
