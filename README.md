@@ -3,7 +3,8 @@ HandMadeProjects
 
 
 # Website Link 
-	- https://sprl.in/hmp24
+  <a href="https://sprl.in/hmp24" target="_blank">Open Website Now : https://sprl.in/hmp24</a>
+
 
 # Categories:
     - Sofware Section
