@@ -3,7 +3,7 @@ HandMadeProjects
 
 
 # Website Link 
-  <a href="https://sprl.in/hmp24" target="_blank">Open Website Now : https://sprl.in/hmp24</a>
+  [Open Website Now](https://sprl.in/hmp24)
 
 
 # Categories:
