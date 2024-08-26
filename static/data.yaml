@@ -79,6 +79,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\general parts\pizo sensor.png
@@ -92,10 +93,10 @@ hardware:
 
 
   Organ Stiching Machine:
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
+    img_path : static\project_img\hardware\Organ Stiching Machine\Organ_Stiching_Machine_main.jpg
     desc : The User can Practice the Organ Stiching with our System.
-    tech : Website, ESP32, SERVO motor, Buzzer
-    domain : IoT
+    tech : Website, ESP32, SERVO Motor, Buzzer
+    domain : IoT, Robotics
 
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20OrganStichingMachine
 
@@ -130,9 +131,8 @@ hardware:
         TechStack  : Embedded C, Python-Flask(Backend:Server), Tailwind CSS (Frontend), Database (SQLite) 
         <br>
         Components : ESP32, SERVO motor, Arduino IDE, Arduino Nano, Buzzer, LEDs(RED+BLUE), Potentiometer
-
         <br>
-        url : https://www.youtube.com/watch?v=8D4_rlIo-JE
+        <a class="hover:text-indigo-500" href="https://www.youtube.com/watch?v=8D4_rlIo-JE">url : https://www.youtube.com/watch?v=8D4_rlIo-JE</a>
         <br>
         <br>
 
@@ -141,10 +141,9 @@ hardware:
         =====================<br>
         Practicing organ stitching in robotic surgery requires precise control and feedback to simulate real surgical conditions. Traditional methods may lack the accuracy and responsiveness needed for effective training. This project aims to provide a realistic practice environment by allowing users to control a robotic arm to stitch organs, enhancing their skills and confidence. The system tracks practice trials, providing valuable feedback for continuous improvement, thereby addressing the need for advanced surgical training tools.
 
-
-
         <br>
         <br>
+
 
         ## Report Contents:
         ==============<br>
@@ -173,8 +172,10 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
+      - static\project_img\hardware\Organ Stiching Machine\Organ_Stiching_Machine_2.jpg
       - static\project_img\hardware\general parts\servo.jpeg
       - static\project_img\hardware\general parts\arduino nano.png
       - static\project_img\hardware\general parts\potentiometer.png
@@ -182,14 +183,13 @@ hardware:
       - static\project_img\hardware\general parts\arduino ide.png
       - static\project_img\hardware\general parts\embbed c.png
       - static\project_img\hardware\general parts\leds.png
-      - static\project_img\hardware\general parts\white cardboard.png
 
 
-  Robotic ARM Material Segregator:
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
-    desc : The Smart Automatic Robotic ARM will seprate materials.
-    tech : Website, ESP32, battery, 4x4keypad, Oled
-    domain : IoT
+  Robotic ARM for Material Segregation:
+    img_path : static\project_img\hardware\Robotic ARM - Material Segregator\Robotic ARM.jpg
+    desc : The Smart Automatic Robotic ARM will seprate materials. Metal, non-metal and then non-metal further classified based on COLOR.
+    tech : Website, ESP32, Battery, 4x4 Keypad, Oled
+    domain : IoT, Robotics
 
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20RoboticARMMaterialSegregator
 
@@ -212,7 +212,7 @@ hardware:
         ======================<br><br>
 
         - Robotic arm will be able to Segregate the materials like
-        - metal, plastic, magnet
+        - metal, non-metal and then non-metal further classified based on COLOR
 
         <br>
         <br>
@@ -261,118 +261,25 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
-      - static\project_img\hardware\Smart Attendence System\img4.png
-      - static\project_img\hardware\Smart Attendence System\img1.png
-      - static\project_img\hardware\Smart Attendence System\img2.png
-      - static\project_img\hardware\Smart Attendence System\img3.png
-
-
-
-  GOLD Extractor Machine :
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
-    desc : Machine segregates the gold from the soil 
-    tech : Website, ESP32, SERVO motor, Motors, Oled
-    domain : IoT
-
-    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20GOLDExtractorMachine
-
-    markdowndetails : |
-
-        # Project Description:
-        ======================<br><br>
-
-        - Automated GOLD extractor machine designed for efficient extraction from riverbed soil.
-        - Uses multiple filters to separate gold particles from soil material.
-        - Extracted gold collected in a final container for further processing.
-        - Includes a weight measurement mechanism to quantify extracted gold.
-        - Integrates internet connectivity to fetch real-time gold prices and sends email notifications.
-        - Features a portfolio tracking system to monitor monthly extraction and earnings.
-
-        <br>
-        <br>
-
-
-        # Fast Concept Catchup:
-        ======================<br><br>
-
-        - the system takes the soil as an input
-        - using multiple filters it seprates the gold from the soil
-        - after words the extracted gold is gather in the final container 
-        - and then using weight mechine it measures 
-        - and then searches the best price of the raw gold on internet and emails you
-        - it also tracks your portfolio like how much you have extracted gold and earned this month
-
-        <br>
-        <br>
-
-        # Details:
-        =====================<br>
-        TechStack  : Embedded C, Python-Flask(Backend:Server), Tailwind CSS (Frontend), Database (SQLite) 
-        <br>
-        Components : ESP32, SERVO motor, Arduino IDE, Arduino Nano, Buzzer, LEDs(RED+BLUE)
-
-        <br>
-        <br>
-
-        # Problem Statement:
-        =====================<br>
-        Developing a robust GOLD extractor machine requires integrating hardware and software components to effectively filter and extract gold from riverbed soil, employing Embedded C and Python-Flask for seamless operation. The challenge lies in ensuring precise filtration and measurement accuracy while maintaining reliability in real-time price fetching and portfolio management functionalities.
-
-        <br>
-        <br>
-
-
-        # Requirements:
-        =====================<br>
-        - The soil needs to be from river or any water fall area where their is major water motions 
-        - and has posibilities to extract the gold from it
-
-        <br>
-        <br>
-
-        ## Report Contents:
-        ==============<br>
-        - --> Components List (BOM: Bill of Material)
-        - --> Block Diagram
-        - --> Flow Chart
-        - --> Components : Name, Images, Details
-        - --> Circuit Diagram
-        - --> Problem Statement
-        - --> Abstract
-        - --> Introduction
-        - --> Methodology
-        - --> Challenges and Solutions
-        - --> Performance Analysis
-        - --> Advantages
-        - --> Limitation
-        - --> Application
-        - --> Future Scope
-        - --> Conclusion
-        - --> Output Images
-
-        <br>
-        <br>
-
-        ## Project Deliverables:<br>
-        ================
-        - --> Project Hardware
-        - --> Project Report
-        
-    links: 
-      - static\project_img\hardware\Smart Attendence System\img4.png
-      - static\project_img\hardware\Smart Attendence System\img1.png
-      - static\project_img\hardware\Smart Attendence System\img2.png
-      - static\project_img\hardware\Smart Attendence System\img3.png
+      - static\project_img\hardware\general parts\servo.jpeg
+      - static\project_img\hardware\general parts\arduino nano.png
+      - static\project_img\hardware\general parts\potentiometer.png
+      - static\project_img\hardware\general parts\preset potentiometer.png
+      - static\project_img\hardware\general parts\arduino ide.png
+      - static\project_img\hardware\general parts\embbed c.png
+      - static\project_img\hardware\general parts\leds.png
+      - static\project_img\hardware\general parts\white cardboard.png
 
 
 
   EMO Robot Clone:
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
-    desc : Registers students/teachers, marks attendance, tracks timetable, holidays. 
-    tech : Website, ESP32, battery, SERVO motor, Oled
-    domain : IoT
+    img_path : static\project_img\hardware\EMO Robot\EMO Robot.jpg
+    desc : EMO Robot clone designed for Personalized Entertainment by displaying Facial Expressions, Emotions, etc
+    tech : Website, ESP32, battery, SERVO Motor, Oled
+    domain : IoT, Robotics
 
     whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20EMORobotClone
 
@@ -408,7 +315,8 @@ hardware:
         <br>
         Components : ESP32-CAM, SERVO motor, Arduino IDE, Arduino Nano, Buzzer, LEDs(RED+BLUE), Oled, Touch Sensor
         <br>
-        url : https://www.youtube.com/watch?v=abqUMxj-1WI
+        <a class="hover:text-indigo-500" href="https://www.youtube.com/watch?v=abqUMxj-1WI">url : https://www.youtube.com/watch?v=abqUMxj-1WI</a>
+
         <br>
         Note : only some part will be implemented
         <br>
@@ -450,17 +358,22 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
-      - static\project_img\hardware\Smart Attendence System\img4.png
-      - static\project_img\hardware\Smart Attendence System\img1.png
-      - static\project_img\hardware\Smart Attendence System\img2.png
-      - static\project_img\hardware\Smart Attendence System\img3.png
+      - static\project_img\hardware\EMO Robot\EMO Robot.jpg
+      - static\project_img\hardware\general parts\servo.jpeg
+      - static\project_img\hardware\general parts\arduino nano.png
+      - static\project_img\hardware\general parts\potentiometer.png
+      - static\project_img\hardware\general parts\preset potentiometer.png
+      - static\project_img\hardware\general parts\arduino ide.png
+      - static\project_img\hardware\general parts\battery.jpeg
+      - static\project_img\hardware\general parts\oled.jpeg
 
 
 
   SALTO - The Jumping Robot:
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
+    img_path : static\project_img\hardware\SALTO - The Jumping Robot\SALTO - The Jumping Robot.png
     desc : SALTO - The Jumbing Robot is used for learning purpose. 
     tech : Website, ESP32, Servo Motor
     domain : IoT
@@ -537,17 +450,18 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
-      - static\project_img\hardware\Smart Attendence System\img4.png
-      - static\project_img\hardware\Smart Attendence System\img1.png
-      - static\project_img\hardware\Smart Attendence System\img2.png
-      - static\project_img\hardware\Smart Attendence System\img3.png
+      - static\project_img\hardware\general parts\servo.jpeg
+      - static\project_img\hardware\general parts\arduino nano.png
+      - static\project_img\hardware\general parts\arduino ide.png
+      - static\project_img\hardware\general parts\battery.jpeg
 
 
 
   MIT Transform Smart Desk:
-    img_path : static\project_img\hardware\Smart Attendence System\img4.png
+    img_path : static\project_img\hardware\MIT Transform Smart Desk\MIT Transform Smart Desk.jpg
     desc : It makes interactive visualizations...
     tech : Website, ESP32, Servo, Buzzer
     domain : IoT
@@ -624,12 +538,13 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
-      - static\project_img\hardware\Smart Attendence System\img4.png
-      - static\project_img\hardware\Smart Attendence System\img1.png
-      - static\project_img\hardware\Smart Attendence System\img2.png
-      - static\project_img\hardware\Smart Attendence System\img3.png
+      - static\project_img\hardware\MIT Transform Smart Desk\MIT Transform Smart Desk.jpg
+      - static\project_img\hardware\MIT Transform Smart Desk\transform.jpg
+      - static\project_img\hardware\general parts\servo.jpeg
+      - static\project_img\hardware\general parts\arduino ide.png
 
 
 
@@ -708,6 +623,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -793,6 +709,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -876,6 +793,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -963,6 +881,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -1048,6 +967,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -1135,6 +1055,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -1259,7 +1180,8 @@ hardware:
         ## Project Deliverables:<br>
         ================
         - --> Project Hardware
-        - --> Project Report        
+        - --> Project Report
+        - --> Project Simulation        
     links: 
       - static\project_img\hardware\Weather Station\img-1.jpg
       - static\project_img\hardware\general parts\oled.jpeg
@@ -1325,6 +1247,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
 
     links: 
       - static\project_img\hardware\Smart Home Controlling System\img1.png
@@ -1388,6 +1311,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
 
     links: 
       - static\project_img\hardware\Radar System\img1.jpeg
@@ -1453,6 +1377,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Irrigation System\img1.png
@@ -1521,6 +1446,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Parking System\iot-based-smart-parking-system-project.png
@@ -1589,6 +1515,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Smart Attendence System\img4.png
@@ -1692,6 +1619,7 @@ hardware:
         ================
         - --> Project Hardware
         - --> Project Report
+        - --> Project Simulation
         
     links: 
       - static\project_img\hardware\Transmission Line Fault Detection\img1.png
