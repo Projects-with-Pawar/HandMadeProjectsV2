@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="static/your-logo.png">
+
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="static\tailwindcss.js"></script>
+
+    <!-- Include js-yaml library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    
+    <style>
+        #body-container {
+            height: 27rem;
+            overflow-y: auto;
+            scrollbar-width: thin; /* Firefox */
+            scrollbar-color: #656161 #686464; /* Firefox */
+    
+            /* Webkit (Chrome, Safari) */
+            &::-webkit-scrollbar {
+                width: 10px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #555353;
+            }
+    
+            &::-webkit-scrollbar-track {
+                background-color: #f0f0f0;
+            }
+        }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100%; /* Adjust the max-width as needed */
+            margin: auto;
+          }
+      
+          .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+          }
+      
+          .carousel-item {
+            flex: 0 0 100%;
+          }
+      
+          img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mysection {
+          display: none;
+        }
+    </style>
+
+    <title>HandMadeProjects . Engennering Project Filters</title>
+
+</head>
+<body>
+    <!-- Navbar - fixed -->
+    <section class="font-mono z-50">
+        <nav class="fixed z-50 bg-white top-0 left-0 w-full py-2 px-4 flex items-center justify-between border shadow-md">
+            <!-- Brand Logo and Name on the Left -->
+            <a class="flex items-center space-x-2" href="index.html">
+                <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2"> 
+                <!-- Adjust height and width as needed -->
+                <span class="md:text-2xl text-xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
+            </a>
+        
+            <!-- Tabs on the Right
+            <div class="flex items-center space-x-10">
+                <a href="#seasonal_items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Seasonal Items</a>
+                <a href="#items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">All Food Items</a>
+                <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
+            </div> -->
+
+            <!-- Tabs on the Right - responsive -->
+            <div class="hidden md:flex items-center space-x-10">
+            <a href="engenneringMenu.html?path=software" 
+                class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
+            <a href="engenneringMenu.html?path=hardware" 
+                class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
+            <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Toggle (Hamburger Icon) -->
+            <div class="md:hidden">
+                <button id="mobileMenuToggle" class="text-xl text-gray-600 hover:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white py-2 px-4 shadow-md">
+                <a href="#software" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
+                <a href="#hardware" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
+                <a href="#contact" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
+            </div>
+
+            </nav>
+    </section>
+    <div class="mt-20"></div>
+
+    
+    <section class="px-2 md:mx-20 mt-20 my-4">
+        <h1 class="text-2xl text-indigo-600 font-bold">Filter Results</h1>
+        <div id="tagValue"></div>
+        <div id="result"></div>
+    </section>
+
+    
+    <!-- Mass Retail Order -->
+    <section class="pt-20">
+        <div class="text-mono text-md md:text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-white hover:rounded-md hover:bg-gradient-to-r hover:from-indigo-400 hover:via-indigo-800 hover:to-indigo-600">For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone + <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
+    </section>
+  
+
+    <!-- Footer -->
+    <div class="pt-20 text-mono text-md md:text-2xl py-4 px-2 mt-10 md:px-20 bg-gray-100" id="contact">
+
+        <div class="border border-gray-500 mx-2 md:border-gray-100 md:underline text-mono text-xl md:text-2xl font-bold text-center py-4 mb-6">Contact</div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 mb-10">
+            <div>
+            <div class="text-center text-md text-gray-600">IoT, WebApp, AI/ML Developer, GenAI : <br><b>Mr. Atharva Pawar <br> (+91 81692 39027)</b></div>
+            </div>
+
+            <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT & WebApp Developer : <br><b> Mr. Sahil Baikar <br> (+91 90822 71516)</b></div>
+
+            <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT Developer & Digital Marketing : <br><b> Mr. Shubham Bochare <br> (+91 97662 48935)</b></div>
+        </div>
+
+        <hr>
+        <div class="text-center font-bold text-gray-600 mt-4">HandMadeProjects | 2024</div>
+    </div>
+
+    <script>
+        // Function to fetch YAML file and search for the category and tag
+        async function fetchDataAndSearch(category, tag) {
+            try {
+                const response = await fetch('static/data.yaml'); // Path to your YAML file
+                const yamlText = await response.text();
+                const data = jsyaml.load(yamlText);
+    
+                // Display the category and tag value on the screen
+                document.getElementById('tagValue').innerHTML = `<p class="capitalize">Category: ${category} | Tag: ${tag}</p>`;
+    
+                // Check if the category exists in the data
+                if (!data[category]) {
+                    document.getElementById('result').innerHTML = `<p class="text-2xl font-bold text-red-500 text-center mt-10">Category "${category}" not found.</p>`;
+                    return;
+                }
+    
+                // Initialize an empty array to hold project details
+                let projectDetails = [];
+    
+                // Iterate through the YAML data to find projects with the specified tag under the specified category
+                for (const key in data[category]) {
+                    if (data[category][key].tags && data[category][key].tags.includes(tag)) {
+                        const project = data[category][key];
+                        projectDetails.push({
+                            title: key,
+                            imgPath: project.img_path || '',
+                            description: project.desc || '',
+                            technology: project.tech || ''
+                        });
+                    }
+                }
+    
+                // Display the project details
+                const resultDiv = document.getElementById('result');
+                if (projectDetails.length > 0) {
+                    resultDiv.innerHTML = `<p class="mt-10 mb-2 font-bold capitalize">Projects in category "${category}" with tag "${tag}":</p><ul>${projectDetails.map(project => 
+                        `<a href="projectDetails.html?domain=${category}&project=${project.title}" target="_blank">
+                            <li class="p-1 border border-gray-300 rounded-md text-md mb-1 shadow shadow-md hover:bg-indigo-500 hover:text-white grid md:grid-cols-8 grid-cols-3 gap-2">
+                                <img src="${project.imgPath}" alt="${project.title} Image" class="h-28 w-auto mx-auto rounded-md">
+                                <div class="md:col-span-7 col-span-2">
+                                    
+                                    <p class="font-bold capitalize">${project.title}</p>
+                                    <p class="md:text-md text-sm">${project.description}</p>
+                                    <p class="text-sm">[ ${project.technology} ]</p>
+
+                                </div>
+                            </li>
+                        </a>`
+                    ).join('')}</ul>`;
+                } else {
+                    resultDiv.innerHTML = `<p class="text-2xl font-bold text-red-500 text-center mt-10">No projects found in category "${category}" with tag "${tag}".</p>`;
+                }
+            } catch (error) {
+                console.error('Error fetching or parsing YAML file:', error);
+                document.getElementById('result').innerHTML = `<p>Error: Unable to process the YAML file.</p>`;
+            }
+        }
+    
+        // Extract 'cat' and 'tag' parameters from the URL
+        function getParamsFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return {
+                category: urlParams.get('cat'),
+                tag: urlParams.get('tag')
+            };
+        }
+    
+        // Get the category and tag from the URL and search
+        const { category, tag } = getParamsFromUrl();
+        if (category && tag) {
+            fetchDataAndSearch(category, tag);
+        } else {
+            document.getElementById('result').innerHTML = '<p>Category and/or tag not provided in the URL.</p>';
+        }
+    </script>
+    
+</body>
+</html>
