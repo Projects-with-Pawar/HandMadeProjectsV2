@@ -1,324 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="static/your-logo.png">
+  <link rel="icon" type="image/png" href="static/your-logo.png">
 
 
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <script src="static\tailwindcss.js"></script>
+  <script src="static\tailwindcss.js"></script>
 
-    <!-- Include js-yaml library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-    
-    <style>
-        #body-container {
-            height: 27rem;
-            overflow-y: auto;
-            scrollbar-width: thin; /* Firefox */
-            scrollbar-color: #656161 #686464; /* Firefox */
-    
-            /* Webkit (Chrome, Safari) */
-            &::-webkit-scrollbar {
-                width: 10px;
-            }
-    
-            &::-webkit-scrollbar-thumb {
-                background-color: #555353;
-            }
-    
-            &::-webkit-scrollbar-track {
-                background-color: #f0f0f0;
-            }
-        }
+  <!-- Include js-yaml library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-            max-width: 100%; /* Adjust the max-width as needed */
-            margin: auto;
-          }
-      
-          .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-          }
-      
-          .carousel-item {
-            flex: 0 0 100%;
-          }
-      
-          img {
-            width: 100%;
-            height: auto;
-        }
+  <style>
+    #body-container {
+      height: 27rem;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      /* Firefox */
+      scrollbar-color: #656161 #686464;
+      /* Firefox */
 
-        .mysection {
-          display: none;
-        }
-    </style>
+      /* Webkit (Chrome, Safari) */
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          // Get the URL parameters
-          var params = new URLSearchParams(window.location.search);
-          // Select the element to display the message
-          var messageElement = document.getElementById("message");
-          var softwareSection = document.getElementById("software");
-          var hardwareSection = document.getElementById("hardware");
-          var mechanicalSection = document.getElementById("mechanical");
-          var simulationSection = document.getElementById("simulation");
-          
-          // Check if the 'path' parameter is 'software'
-          if (params.get('path') === 'software') {
-              //messageElement.textContent = "Software";
-              softwareSection.style.display = 'block';
-              messageElement.style.display = 'none';
-          } 
-          else if (params.get('path') === 'hardware') {
-              //messageElement.textContent = "Hardware";
-              hardwareSection.style.display = 'block';
-              messageElement.style.display = 'none';
-          } 
-          else if (params.get('path') === 'mechanical') {
-              //messageElement.textContent = "Mechanical";
-              mechanicalSection.style.display = 'block';
-              messageElement.style.display = 'none';
-          } 
-          else if (params.get('path') === 'simulation') {
-              //messageElement.textContent = "Simulation";
-              simulationSection.style.display = 'block';
-              messageElement.style.display = 'none';
-          } 
-          else {
-              //messageElement.textContent = "Hello World";
-              messageElement.style.display = 'block';
-          }
-      });
+      &::-webkit-scrollbar-thumb {
+        background-color: #555353;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+      }
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      /* Adjust the max-width as needed */
+      margin: auto;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      flex: 0 0 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .mysection {
+      display: none;
+    }
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the URL parameters
+      var params = new URLSearchParams(window.location.search);
+      // Select the element to display the message
+      var messageElement = document.getElementById("message");
+      var softwareSection = document.getElementById("software");
+      var hardwareSection = document.getElementById("hardware");
+      var mechanicalSection = document.getElementById("mechanical");
+      var simulationSection = document.getElementById("simulation");
+
+      // Check if the 'path' parameter is 'software'
+      if (params.get('path') === 'software') {
+        //messageElement.textContent = "Software";
+        softwareSection.style.display = 'block';
+        messageElement.style.display = 'none';
+      }
+      else if (params.get('path') === 'hardware') {
+        //messageElement.textContent = "Hardware";
+        hardwareSection.style.display = 'block';
+        messageElement.style.display = 'none';
+      }
+      else if (params.get('path') === 'mechanical') {
+        //messageElement.textContent = "Mechanical";
+        mechanicalSection.style.display = 'block';
+        messageElement.style.display = 'none';
+      }
+      else if (params.get('path') === 'simulation') {
+        //messageElement.textContent = "Simulation";
+        simulationSection.style.display = 'block';
+        messageElement.style.display = 'none';
+      }
+      else {
+        //messageElement.textContent = "Hello World";
+        messageElement.style.display = 'block';
+      }
+    });
   </script>
 
-    <title>HandMadeProjects . Engennering Project</title>
+  <title>HandMadeProjects . Engennering Project</title>
 </head>
 
 <body id="body-container">
-    
-    <!-- Navbar - fixed -->
-    <section class="font-mono z-50">
-        <nav class="fixed z-50 bg-white top-0 left-0 w-full py-2 px-4 flex items-center justify-between border shadow-md">
-            <!-- Brand Logo and Name on the Left -->
-            <a class="flex items-center space-x-2" href="index.html">
-              <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2"> 
-                <!-- Adjust height and width as needed -->
-              <span class="md:text-2xl text-xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
-            </a>
-        
-            <!-- Tabs on the Right
+
+  <!-- Navbar - fixed -->
+  <section class="font-mono z-50">
+    <nav class="fixed z-50 bg-white top-0 left-0 w-full py-2 px-4 flex items-center justify-between border shadow-md">
+      <!-- Brand Logo and Name on the Left -->
+      <a class="flex items-center space-x-2" href="index.html">
+        <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2">
+        <!-- Adjust height and width as needed -->
+        <span class="md:text-2xl text-xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
+      </a>
+
+      <!-- Tabs on the Right
             <div class="flex items-center space-x-10">
               <a href="#seasonal_items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Seasonal Items</a>
               <a href="#items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">All Food Items</a>
               <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
             </div> -->
 
-            <!-- Tabs on the Right - responsive -->
-          <div class="hidden md:flex items-center space-x-10">
-            <a href="engenneringMenu.html?path=software" 
-              class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
-            <a href="engenneringMenu.html?path=hardware" 
-              class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
-            <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
-          </div>
-
-           <!-- Mobile Menu Toggle (Hamburger Icon) -->
-            <div class="md:hidden">
-              <button id="mobileMenuToggle" class="text-xl text-gray-600 hover:text-gray-900">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-              </button>
-          </div>
-
-          <!-- Mobile Menu -->
-          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white py-2 px-4 shadow-md">
-              <a href="#software" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
-              <a href="#hardware" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
-              <a href="#contact" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
-          </div>
-
-          </nav>
-    </section>
-    <div class="mt-20"></div>
-
-
-
-
-    <div id="message">
-      <div class="border border-gray-500 mx-2 md:border-white text-mono text-2xl font-bold text-center py-4">Select Project Domain</div>
-      
-      <!-- cards -->
-      <div class="grid grid-cols-2 gap-4 mx-20 md:mx-20">
-  
-        <a href="engenneringMenu.html?path=software">
-          <div class="border border-gray-400 py-10 text-center text-xl shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-300 font-bold">
-            <i class="fa-solid fa-code mr-2 text-4xl"></i>Software Projects</div>
-        </a>
-        
-        <a href="engenneringMenu.html?path=hardware">
-          <div class="border border-gray-400 py-10 text-center text-xl shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-300 font-bold">
-            <i class="fa-solid fa-bolt mr-2 text-4xl"></i>Hardware Projects</div>
-        </a>
-  
-        <a href="engenneringMenu.html?path=mechanical">
-          <div class="border border-gray-400 py-10 text-center text-xl shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-300 font-bold">
-            <i class="fa-solid fa-wrench mr-2 text-4xl"></i>Mechanical Projects</div>
-        </a>
-        
-        <a href="engenneringMenu.html?path=simulation">
-          <div class="border border-gray-400 py-10 text-center text-xl shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-300 font-bold">
-            <i class="fa-solid fa-laptop mr-2 text-4xl"></i>Simulation Projects</div>
-        </a>
-
-      </div>
-    
-    </div>
-
-
-
-
-
-
-
-    <!-- Software -->
-    <section class="mysection md:mx-20 mt-20 my-4" id="software">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Software Projects</div>
-
-      <div class="text-2xl text-indigo-600 font-bold">Filters</div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-        <a href="projectFilter.html?cat=software&tag=miniproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Mini Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=software&tag=majorproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Major Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=software&tag=cyberproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Cyber Project</div>
-        </a> 
+      <!-- Tabs on the Right - responsive -->
+      <div class="hidden md:flex items-center space-x-10">
+        <a href="engenneringMenu.html?path=software"
+          class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
+        <a href="engenneringMenu.html?path=hardware"
+          class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
+        <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
       </div>
 
-      <div id="softwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
-    </section>
-
-    <!-- Hardware -->
-    <section class="mysection md:mx-20 mt-20 my-4" id="hardware">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Hardware Projects</div>
-
-      <div class="text-2xl text-indigo-600 font-bold">Filters</div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-        <a href="projectFilter.html?cat=hardware&tag=miniproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Mini Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=hardware&tag=majorproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Major Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=hardware&tag=iotproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">IoT Project</div>
-        </a> 
+      <!-- Mobile Menu Toggle (Hamburger Icon) -->
+      <div class="md:hidden">
+        <button id="mobileMenuToggle" class="text-xl text-gray-600 hover:text-gray-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
       </div>
 
-      <div id="hardwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
-    </section>
-
-    <!-- Mechanical -->
-    <section class="mysection md:mx-20 mt-20 my-4" id="mechanical">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Mechanical Projects</div>
-
-      <div class="text-2xl text-indigo-600 font-bold">Filters</div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-        <a href="projectFilter.html?cat=mechanical&tag=miniproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Mini Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=mechanical&tag=majorproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Major Project</div>
-        </a> 
-        
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white py-2 px-4 shadow-md">
+        <a href="#software"
+          class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
+        <a href="#hardware"
+          class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
+        <a href="#contact" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
       </div>
 
-      <div id="mechanicalItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
-    </section>
-
-    <!-- Simulation -->
-    <section class="mysection md:mx-20 mt-20 my-4" id="simulation">
-      <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Simulation Projects</div>
-
-      <div class="text-2xl text-indigo-600 font-bold">Filters</div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-        <a href="projectFilter.html?cat=simulation&tag=miniproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Mini Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=simulation&tag=majorproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">Major Project</div>
-        </a> 
-        
-        <a href="projectFilter.html?cat=simulation&tag=iotproject" >
-          <div class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">IoT Project</div>
-        </a> 
-      </div>
-
-      <div id="simulationItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1"><!-- Dynamic content will be added here --></div>
-    </section>
+    </nav>
+  </section>
+  <div class="mt-20"></div>
 
 
 
 
+  <div id="message">
+    <div class="border mx-2 border-white text-mono text-2xl font-bold text-center py-4">Select Project Domain</div>
 
+    <!-- cards -->
+    <div class="grid grid-cols-2 gap-4 mx-2 mt-2 md:mx-20 md:mx-20">
 
-
-
-
-    <!-- Mass Retail Order -->
-    <section class="pt-20">
-      <div class="text-mono text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-white hover:rounded-md hover:bg-gradient-to-r hover:from-indigo-400 hover:via-indigo-800 hover:to-indigo-600">For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone + <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
-    </section>
-
-    <!-- Footer -->
-    <div class="pt-20 text-mono text-xl py-4 px-2 mt-10 md:px-20 bg-gray-100" id="contact">
-
-      <div class="border border-gray-500 mx-2 md:border-gray-100 md:underline text-mono text-2xl font-bold text-center py-4 mb-6">Contact</div>
-
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 mb-10">
-        <div>
-          <div class="text-center text-md text-gray-600">IoT, WebApp, AI/ML Developer, GenAI : <br><b>Mr. Atharva Pawar <br> (+91 81692 39027)</b></div>
+      <a href="engenneringMenu.html?path=software">
+        <div
+          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
+          <i class="fa-solid fa-code mr-2 text-4xl"></i><br>Software Projects
         </div>
+      </a>
 
-        <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT & WebApp Developer : <br><b> Mr. Sahil Baikar <br> (+91 90822 71516)</b></div>
+      <a href="engenneringMenu.html?path=hardware">
+        <div
+          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
+          <i class="fa-solid fa-bolt mr-2 text-4xl"></i><br>Hardware Projects
+        </div>
+      </a>
 
-        <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT Developer & Digital Marketing : <br><b> Mr. Shubham Bochare <br> (+91 97662 48935)</b></div>
-      </div>
+      <a href="engenneringMenu.html?path=mechanical">
+        <div
+          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
+          <i class="fa-solid fa-wrench mr-2 text-4xl"></i><br>Mechanical Projects
+        </div>
+      </a>
 
-      <hr>
-      <div class="text-center font-bold text-gray-600 mt-4">HandMadeProjects | 2024</div>
+      <a href="engenneringMenu.html?path=simulation">
+        <div
+          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
+          <i class="fa-solid fa-laptop mr-2 text-4xl"></i><br>Simulation Projects
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Software -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="software">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Software Projects</div>
+
+    <div class="text-2xl text-indigo-600 font-bold">Filters</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
+      <a href="projectFilter.html?cat=software&tag=miniproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Mini Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=software&tag=majorproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Major Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=software&tag=cyberproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Cyber Project</div>
+      </a>
+    </div>
+
+    <div id="softwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+      <!-- Dynamic content will be added here --></div>
+  </section>
+
+  <!-- Hardware -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="hardware">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Hardware Projects</div>
+
+    <div class="text-2xl text-indigo-600 font-bold">Filters</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
+      <a href="projectFilter.html?cat=hardware&tag=miniproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Mini Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=hardware&tag=majorproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Major Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=hardware&tag=iotproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          IoT Project</div>
+      </a>
+    </div>
+
+    <div id="hardwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+      <!-- Dynamic content will be added here --></div>
+  </section>
+
+  <!-- Mechanical -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="mechanical">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Mechanical Projects</div>
+
+    <div class="text-2xl text-indigo-600 font-bold">Filters</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
+      <a href="projectFilter.html?cat=mechanical&tag=miniproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Mini Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=mechanical&tag=majorproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Major Project</div>
+      </a>
+
+    </div>
+
+    <div id="mechanicalItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+      <!-- Dynamic content will be added here --></div>
+  </section>
+
+  <!-- Simulation -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="simulation">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Simulation Projects</div>
+
+    <div class="text-2xl text-indigo-600 font-bold">Filters</div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
+      <a href="projectFilter.html?cat=simulation&tag=miniproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Mini Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=simulation&tag=majorproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          Major Project</div>
+      </a>
+
+      <a href="projectFilter.html?cat=simulation&tag=iotproject">
+        <div
+          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
+          IoT Project</div>
+      </a>
+    </div>
+
+    <div id="simulationItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+      <!-- Dynamic content will be added here --></div>
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Mass Retail Order -->
+  <section class="mt-4 md:pt-20">
+    <div
+      class="text-mono text-md md:text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-white hover:rounded-md hover:bg-gradient-to-r hover:from-indigo-400 hover:via-indigo-800 hover:to-indigo-600">
+      For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone +
+      <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
+  </section>
+
+  <!-- Footer -->
+  <div class="pt-10 md:pt-20 text-mono text-md md:text-2xl py-4 px-2 mt-10 md:px-20 bg-gray-100" id="contact">
+    <div
+      class="border border-gray-500 mx-2 md:border-gray-100 md:underline text-mono text-xl md:text-2xl font-bold text-center py-4 mb-6">
+      Contact
     </div>
 
 
-    <script>
+    <div class="grid grid-cols-1 md:grid-cols-3 mb-10">
+      <div>
+        <div class="text-center text-md text-gray-600">IoT, WebApp, AI/ML Developer, GenAI : <br><b>Mr. Atharva Pawar
+            <br> (+91 81692 39027)</b></div>
+      </div>
 
-      // Load YAML data from file
-      fetch('static/data.yaml')
+      <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT & WebApp Developer : <br><b> Mr. Sahil Baikar <br>
+          (+91 90822 71516)</b></div>
+
+      <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT Developer & Digital Marketing : <br><b> Mr.
+          Shubham Bochare <br> (+91 97662 48935)</b></div>
+
+    </div>
+    <hr>
+    <div class="text-center font-bold text-gray-600 mt-4">HandMadeProjects | 2024</div>
+  </div>
+
+
+  <script>
+
+    // Load YAML data from file
+    fetch('static/data.yaml')
       .then(response => response.text())
       .then(yamlData => {
         const data = jsyaml.load(yamlData);
-        
+
         const foodItemsContainer = document.getElementById('hardwareItems');
 
         // Loop through the data and render each item
@@ -348,8 +396,8 @@
           foodItemsContainer.innerHTML += itemHtml;
         }
 
-        
-        
+
+
         const seasonalItemsContainer = document.getElementById('softwareItems');
         // Loop through the data and render each item
         for (const itemName in data.software) {
@@ -440,16 +488,16 @@
       })
       .catch(error => console.error('Error loading YAML data:', error));
 
-          
-      // JavaScript to toggle mobile menu visibility
-      document.getElementById('mobileMenuToggle').addEventListener('click', function () {
-        document.getElementById('mobileMenu').classList.toggle('hidden');
-      });
-    
-    </script>
 
-    <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+    // JavaScript to toggle mobile menu visibility
+    document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+  </script>
+
+  <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
 
 </body>
-</html>
 
+</html>
