@@ -5,6 +5,13 @@ HandMadeProjects
 # Website Link 
   [Open Website Now](https://sprl.in/hmp24)
 
+## Hardware 
+  https://sprl.in/hmphardware
+  
+
+## Software 
+  https://sprl.in/hmpsoftware
+
 
 # Categories:
 
