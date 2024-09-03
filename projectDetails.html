@@ -1,231 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="static/your-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="static/tailwindcss.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="static/your-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="static/tailwindcss.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 
-    <style>
-        section {display: none;}
+  <style>
+    section {
+      display: none;
+    }
 
-        #body-container {
-            height: 27rem;
-            overflow-y: auto;
-            scrollbar-width: thin; /* Firefox */
-            scrollbar-color: #656161 #686464; /* Firefox */
-    
-            /* Webkit (Chrome, Safari) */
-            &::-webkit-scrollbar {
-                width: 10px;
-            }
-    
-            &::-webkit-scrollbar-thumb {
-                background-color: #555353;
-            }
-    
-            &::-webkit-scrollbar-track {
-                background-color: #f0f0f0;
-            }
-        }
+    #body-container {
+      height: 27rem;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      /* Firefox */
+      scrollbar-color: #656161 #686464;
+      /* Firefox */
 
-        .carousel {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-            max-width: 100%; /* Adjust the max-width as needed */
-            margin: auto;
-          }
-      
-          .carousel-inner {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-          }
-      
-          .carousel-item {
-            flex: 0 0 100%;
-          }
-      
-          img {
-            width: 100%;
-            height: auto;
-        }
+      /* Webkit (Chrome, Safari) */
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
 
-        .mysection {
-          display: none;
-        }
-    </style>
+      &::-webkit-scrollbar-thumb {
+        background-color: #555353;
+      }
 
+      &::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+      }
+    }
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      /* Adjust the max-width as needed */
+      margin: auto;
+    }
 
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
+    .carousel-item {
+      flex: 0 0 100%;
+    }
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var params = new URLSearchParams(window.location.search);
-            var domain = params.get('domain');
-            var project = params.get('project');
+    img {
+      width: 100%;
+      height: auto;
+    }
 
-            function loadYAMLData(filePath) {
-                return fetch(filePath)
-                    .then(response => response.text())
-                    .then(yamlData => jsyaml.load(yamlData));
-            }
-
-            function displayProjectDetails(data, domain, project) {
-                const projectDetails = document.getElementById("projectdetails");
-
-                if (data[domain] && data[domain][project]) {
-                    const item = data[domain][project];
-
-                    var converter = new showdown.Converter();
-
-                    const htmlContent = marked.parse(item.markdowndetails);
-
-                    const linksHtml = item.links.map(link => `<img src="${link}" alt="${link}" class="p-1 h-52 w-auto border-4 rounded-md mx-auto mb-4">`).join('');
+    .mysection {
+      display: none;
+    }
+  </style>
 
 
-                    const itemHtml = `
-                        <div class="rounded-md border border-gray-700 my-2 mx-4 md:my-10 p-4 hover:shadow-md">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var params = new URLSearchParams(window.location.search);
+      var domain = params.get('domain');
+      var project = params.get('project');
+
+      function loadYAMLData(filePath) {
+        return fetch(filePath)
+          .then(response => response.text())
+          .then(yamlData => jsyaml.load(yamlData));
+      }
+
+      function displayProjectDetails(data, domain, project) {
+        const projectDetails = document.getElementById("projectdetails");
+
+        if (data[domain] && data[domain][project]) {
+          const item = data[domain][project];
+
+          var converter = new showdown.Converter();
+
+          const htmlContent = marked.parse(item.markdowndetails);
+
+          const linksHtml = item.links.map(link => `<img src="${link}" alt="${link}" class="p-1 md:h-52 h-24 w-auto border-4 rounded-md mx-auto mb-4">`).join('');
+
+
+          const itemHtml = `
+                        <div class="rounded-md border border-gray-700 my-2 md:mx-4 mx-1 md:my-10 md:p-4 p-1 hover:shadow-md">
                             <div class="grid md:grid-cols-3 grid-cols-1">
                                 <div>
                                     <img src="${item.img_path}" alt="${project}" class="h-52 w-auto border-4 rounded-md mx-auto mb-4">
                                 </div>
                                 <div class="text-xl col-span-2">
                                     <div class="font-bold text-center mb-4">${project}</div>
-                                    <div class="text-left"><b>Desc :</b> ${item.desc}</div>
-                                    <div class="text-left mt-2"><b>Tech :</b> ${item.tech}</div>
+                                    <div class="text-left md:text-xl text-sm"><b>Desc :</b> ${item.desc}</div>
+                                    <div class="text-left mt-2 md:text-xl text-sm"><b>Tech :</b> ${item.tech}</div>
                                 </div>
                             </div>
-                            <div class="border p-4 border-2 rounded-md border-yellow-500 shadow-xl shadow-yellow-100 my-10">
-                                <div class="text-center text-2xl font-bold mb-10">About this project</div>
-                                <div class="text-justify">${htmlContent}</div>
+                            <div class="border md:p-4 p-1 border-2 rounded-md border-yellow-500 shadow-xl shadow-yellow-100 my-10">
+                                <div class="text-center md:text-2xl text-md font-bold mb-10">About this project</div>
+                                <div class="text-justify md:text-xl text-sm">${htmlContent}</div>
 
                             </div>
                             
                             <div class="my-4">
                                 <div class="text-center text-2xl font-bold mb-4">Project Images</div>
-                                <div class='grid grid-cols-1 md:grid-cols-4 gap-4'>${linksHtml}</div>
+                                <div class='grid grid-cols-2 md:grid-cols-4 gap-4'>${linksHtml}</div>
                             </div>
 
 
                         </div>
                     `;
 
-                    var itemHtmlWithClasses = itemHtml.replace(/<h1/g, '<h1 class="text-2xl font-bold"');
-                    itemHtmlWithClasses = itemHtmlWithClasses.replace(/<h2/g, '<h1 class="text-xl"');
+          var itemHtmlWithClasses = itemHtml.replace(/<h1/g, '<h1 class="text-2xl font-bold"');
+          itemHtmlWithClasses = itemHtmlWithClasses.replace(/<h2/g, '<h1 class="text-xl"');
 
-                    
-                    projectDetails.innerHTML = itemHtmlWithClasses;
-                    projectDetails.style.display = 'block';
 
-                    document.getElementById("markdata").innerHTML = htmlContent;
+          projectDetails.innerHTML = itemHtmlWithClasses;
+          projectDetails.style.display = 'block';
 
-                } else {
-                    projectDetails.innerHTML = "Project details not found. <br> <a href='engenneringMenu.html' class='text-2xl  font-bold hover:text-indigo-600 hover:underline'><-- GO Back on Menu</a>";
-                    projectDetails.style.display = 'block';
-                    projectDetails.style.color = 'blue';
-                    projectDetails.style.textAlign = 'center';
+          document.getElementById("markdata").innerHTML = htmlContent;
 
-                    projectDetails.classList.add('text-2xl text-center');
+        } else {
+          projectDetails.innerHTML = "Project details not found. <br> <a href='engenneringMenu.html' class='text-2xl  font-bold hover:text-indigo-600 hover:underline'><-- GO Back on Menu</a>";
+          projectDetails.style.display = 'block';
+          projectDetails.style.color = 'blue';
+          projectDetails.style.textAlign = 'center';
 
-                }
-            }
+          projectDetails.classList.add('text-2xl text-center');
 
-            loadYAMLData('static/data.yaml').then(data => {
-                displayProjectDetails(data, domain, project);
-            });
-        });
-    </script>
+        }
+      }
 
-    <title>HandMadeProjects . Engennering Projects</title>
-    
+      loadYAMLData('static/data.yaml').then(data => {
+        displayProjectDetails(data, domain, project);
+      });
+    });
+  </script>
+
+  <title>HandMadeProjects . Engennering Projects</title>
+
 </head>
+
 <body id="body-container">
-    <!-- Navbar - fixed -->
-    <div class="font-mono z-50">
-        <nav class="fixed z-50 bg-white top-0 left-0 w-full py-2 px-4 flex items-center justify-between border shadow-md">
-            <!-- Brand Logo and Name on the Left -->
-            <a class="flex items-center space-x-2" href="index.html">
-              <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2"> 
-                <!-- Adjust height and width as needed -->
-              <span class="text-2xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
-            </a>
-        
-            <!-- Tabs on the Right
+  <!-- Navbar - fixed -->
+  <div class="font-mono z-50">
+    <nav class="fixed z-50 bg-white top-0 left-0 w-full py-2 px-4 flex items-center justify-between border shadow-md">
+      <!-- Brand Logo and Name on the Left -->
+      <a class="flex items-center space-x-2" href="index.html">
+        <img src="static/your-logo.png" alt="yerunkar corner Logo" class="h-12 w-12 rounded-full border-2">
+        <!-- Adjust height and width as needed -->
+        <span class="text-2xl font-bold text-gray-600 hover:text-gray-900">HandMadeProjects</span>
+      </a>
+
+      <!-- Tabs on the Right
             <div class="flex items-center space-x-10">
               <a href="#seasonal_items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Seasonal Items</a>
               <a href="#items" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">All Food Items</a>
               <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
             </div> -->
 
-            <!-- Tabs on the Right - responsive -->
-          <div class="hidden md:flex items-center space-x-10">
-            <a href="engenneringMenu.html?path=software" 
-              class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
-            <a href="engenneringMenu.html?path=hardware" 
-              class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
-            <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
-          </div>
+      <!-- Tabs on the Right - responsive -->
+      <div class="hidden md:flex items-center space-x-10">
+        <a href="engenneringMenu.html?path=software"
+          class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software Projects</a>
+        <a href="engenneringMenu.html?path=hardware"
+          class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware Projects</a>
+        <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
+      </div>
 
-           <!-- Mobile Menu Toggle (Hamburger Icon) -->
-            <div class="md:hidden">
-              <button id="mobileMenuToggle" class="text-xl text-gray-600 hover:text-gray-900">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-              </button>
-          </div>
+      <!-- Mobile Menu Toggle (Hamburger Icon) -->
+      <div class="md:hidden">
+        <button id="mobileMenuToggle" class="text-xl text-gray-600 hover:text-gray-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
 
-          <!-- Mobile Menu -->
-          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white py-2 px-4 shadow-md">
-              <a href="engenneringMenu.html?path=software" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Software-Projects</a>
-              <a href="engenneringMenu.html?path=hardware" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware-Projects</a>
-              <a href="#contact" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
-          </div>
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white py-2 px-4 shadow-md">
+        <a href="engenneringMenu.html?path=software"
+          class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Software Projects</a>
+        <a href="engenneringMenu.html?path=hardware"
+          class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware Projects</a>
+        <a href="#contact" class="block text-sm text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
+      </div>
 
-          </nav>
-    </div>
+    </nav>
+  </div>
 
-    <div class="mt-20"></div>
+  <div class="mt-20"></div>
 
-    <section id="projectdetails">Loading...</section>
+  <section id="projectdetails">Loading...</section>
 
 
-    <!-- Mass Retail Order -->
-    <div class="pt-20">
-      <div class="text-mono text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 shadow-md hover:text-red-500">For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone + <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
-    </div>
+  <!-- Mass Retail Order -->
+  <div class="pt-20">
+    <div
+      class="text-mono text-md md:text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 md:mx-20 shadow-md hover:text-red-500">
+      For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone +
+      <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
+  </div>
 
-    <!-- Footer -->
-    <div class="pt-20 text-mono text-xl py-4 px-2 mt-10 md:px-20 bg-gray-100" id="contact">
+  <!-- Footer -->
+  <div class="md:pt-20 pt-10 text-mono text-md md:text-2xl py-4 px-2 md:px-20 md:mt-10 mt-2  bg-gray-100" id="contact">
 
-      <div class="border border-gray-500 mx-2 md:border-gray-100 md:underline text-mono text-2xl font-bold text-center py-4 mb-6">Contact</div>
+    <div class="border border-gray-500 mx-2 md:border-gray-100 md:underline text-mono text-xl md:text-2xl font-bold text-center py-4 mb-6">Contact</div>
 
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 mb-10">
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 mb-10">
+        <div>
         <div class="text-center text-md text-gray-600">IoT, WebApp, AI/ML Developer, GenAI : <br><b>Mr. Atharva Pawar <br> (+91 81692 39027)</b></div>
+        </div>
 
         <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT & WebApp Developer : <br><b> Mr. Sahil Baikar <br> (+91 90822 71516)</b></div>
 
         <div class="text-center text-md mt-6 md:mt-0 text-gray-600">IoT Developer & Digital Marketing : <br><b> Mr. Shubham Bochare <br> (+91 97662 48935)</b></div>
-
-      </div>
-
-      <hr>
-      <div class="text-center font-bold text-gray-600 mt-4">HandMadeProjects | 2024</div>
     </div>
 
-    <script>
-            // JavaScript to toggle mobile menu visibility
-            document.getElementById('mobileMenuToggle').addEventListener('click', function () {
-                document.getElementById('mobileMenu').classList.toggle('hidden');
-            });
-    </script>
+    <hr>
+    <div class="text-center font-bold text-gray-600 mt-4">HandMadeProjects | 2024</div>
+  </div>
+
+
+  <script>
+    // JavaScript to toggle mobile menu visibility
+    document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+  </script>
 
 </body>
+
 </html>

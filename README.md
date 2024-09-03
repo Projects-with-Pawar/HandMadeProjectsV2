@@ -7,8 +7,24 @@ HandMadeProjects
 
 
 # Categories:
-    - Sofware Section
-    - Hardware Section
+
+### Enginnereing Projects
+  - Software Section:
+    - Mini Projects
+    - Final Year Projects
+      - AI ML
+      - Cyber Security
+      - Desktop Application
+
+
+  - Hardware Section:
+    - Mini Projects
+    - Final Year Projects (IOT projects)
+      - ESP8266, ESP32, Raspberry Pi
+      - STM
+      - PLC
+      - FPGL
+
 
 
 <!-- <img src="https://github.com/AtharvaPawar456/HandMadeProjects/blob/main/static/project_img/hardware-section.png" alt="Image 1" height="250"> -->
