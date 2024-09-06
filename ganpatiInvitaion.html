@@ -129,62 +129,126 @@
   </div>
   <div class="mt-20"></div>
 
-  <!-- <section id="projectdetails">Loading...</section> -->
-  <section class="grid grid-cols-1 md:grid-cols-5 gap-4 mx-1 mt-2 md:mx-20 md:mx-20">
-    <div class="m-2 video-container">
-        <video controls class="hoverVideo h-96 border p-2 rounded-md shadow-2xl">
-            <source src="static/Ganpti_Bappa_invit/Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="m-2">
-        <video controls class="hoverVideo h-96 border p-2 rounded-md shadow-2xl">
-            <source src="static\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="m-2">
-        <video controls class="hoverVideo h-96 border p-2 rounded-md shadow-2xl">
-            <source src="static\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="m-2">
-        <video controls class="hoverVideo h-96 border p-2 rounded-md shadow-2xl">
-            <source src="static\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="m-2">
-        <video controls class="hoverVideo h-96 border p-2 rounded-md shadow-2xl">
-            <source src="static/Ganpti_Bappa_invit/Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  <!-- 
+  static/Ganpti_Bappa_invit/Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4
+  static\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
+  static\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
+  -->
 
+  <div class="text-center text-xl font-bold text-yellow-600"><i class="fa-solid fa-pen-nib mr-2"></i>Designs</div>
+  <section id="ganpatiVideoItems" class="grid grid-cols-1 md:grid-cols-5 gap-4 mx-1 mt-2 md:mx-20 md:mx-20">
+    <!-- Dynamic content will be added here -->
+
+    <!-- <div  class="m-2 video-container border px-2 rounded-md shadow-2xl hover:border-2 hover:shadow-yellow-400">
+        <video controls class="hoverVideo h-96 rounded-md mx-auto mt-2">
+            <source src="static/Ganpti_Bappa_invit/Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-xl text-center my-1">Design 1</div>
+    </div> -->
+
+
+    
+  </section>
+
+
+  <div class="text-center text-xl font-bold text-yellow-600 mt-10"><i class="fa-solid fa-music mr-2"></i>Music / Song</div>
+  <div class="text-center text-xl font-bold text-yellow-600 ">(Note : Custome Music is Allowed)</div>
+  <section id="ganpatiMusicItems" class="grid grid-cols-1 md:grid-cols-5 gap-4 mx-1 mt-2 md:mx-20 md:mx-20">
+
+    <!-- <div class="m-2 video-container border px-2 rounded-md shadow-2xl text-white text-center hover:border-2 hover:shadow-yellow-400 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+      <i class="fa-solid fa-headphones-simple text-2xl mt-2"></i>
+      <div class="text-xl my-1 font-bold font-mono">Music 1</div>
+      <div class="text-md my-1 border border-2 border-yellow-100 rounded-md capitalize shadow-sm shadow-yellow-100">Chinchpokli cha Chintamani
+      </div>
+    </div> -->
+    
+
+    
   </section>
 
   <script>
-    const videos = document.querySelectorAll('.hoverVideo');
+    // Load YAML data from file
+    fetch('static/data.yaml')
+      .then(response => response.text())
+      .then(yamlData => {
+        const data = jsyaml.load(yamlData);
+  
+        const ganpatiVideoContainer = document.getElementById('ganpatiVideoItems');
+  
+        // Loop through the data and render each item
+        for (const itemName in data.Campaign.freeganpatibaapavideos) {
+          const videoLink = data.Campaign.freeganpatibaapavideos[itemName];
+  
+          // Create the HTML structure for each item
+          const itemHtml = `
+            <div class="m-2 video-container border px-2 rounded-md shadow-2xl hover:border-2 hover:shadow-yellow-400">
+                <video controls class="hoverVideo h-96 rounded-md mx-auto mt-2">
+                    <source src="${videoLink}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="text-xl text-center my-1">${itemName}</div>
+            </div>
+          `;
+  
+          // Append the HTML to the container
+          ganpatiVideoContainer.innerHTML += itemHtml;
+        }
 
-    // Loop through all videos and add event listeners
-    videos.forEach(video => {
-        video.addEventListener('mouseenter', () => {
+        const ganpatiMusicContainer = document.getElementById('ganpatiMusicItems');
+  
+        // Loop through the data and render each item
+        for (const itemName in data.Campaign.freeganpatibaapamusic) {
+          const musicLink = data.Campaign.freeganpatibaapamusic[itemName];
+  
+          // Create the HTML structure for each item
+          const itemHtml = `    
+
+          <a href="${musicLink.link}" target="_blank" class="border px-2 rounded-md shadow-2xl hover:border-2 hover:shadow-yellow-400 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div class="m-2 video-container  text-white text-center ">
+              <i class="fa-solid fa-headphones-simple text-2xl mt-2"></i>
+              <div class="text-xl my-1 font-bold font-mono">${itemName}</div>
+              <div class="text-md my-1 border border-2 border-yellow-100 rounded-md capitalize shadow-sm shadow-yellow-100">
+                ${musicLink.title}
+              </div>
+            </div>
+          </a>
+
+          `;
+  
+          // Append the HTML to the container
+          ganpatiMusicContainer.innerHTML += itemHtml;
+        }
+
+
+
+
+
+  
+        // After rendering, select all videos and add hover play/pause functionality
+        const videos = document.querySelectorAll('.hoverVideo');
+  
+        videos.forEach(video => {
+          video.addEventListener('mouseenter', () => {
             video.play();
-        });
-
-        video.addEventListener('mouseleave', () => {
+          });
+  
+          video.addEventListener('mouseleave', () => {
             video.pause();
+            video.currentTime = 0; // Optionally reset to start
+          });
         });
-    });
-</script>
-
+      })
+      .catch(error => console.error('Error loading YAML data:', error));
+  
+  </script>
+  
 
   <!-- Mass Retail Order -->
   <div class="pt-20">
     <div
       class="text-mono text-md md:text-2xl text-green-700 font-bold text-center py-4 border mx-2 md:mx-20 md:mx-20 shadow-md hover:text-red-500">
-      For Project Ordering Contact +91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone +
+      For Project Ordering Contact <br>+91 81692 39027 / +91 90822 71516<br> (<i class="fa-solid fa-phone mx-2"></i>Phone +
       <i class="fa-brands fa-whatsapp mr-2"></i>Whatsapp)</div>
   </div>
 
@@ -216,6 +280,6 @@
     });
   </script>
 
-</body>
 
+</body>
 </html>
