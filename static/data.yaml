@@ -3317,116 +3317,438 @@ origami:
 
 
 
+
+
+
+
+
+
+
+
+
 Campaign:
-  freeganpatibaapavideos:
-    Design1 : static/Ganpti_Bappa_invit/Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4
-    Design2 : static\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
-    Design3 : static\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
-    Design4 : static\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
-    Design5 : static\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
+  ganpatibaapacampaign:
+    title : Ganpati Bappa Short Invite Video
+    thumbnail : static\campaignData\Ganpti_Bappa_invit\ganpati icon.png
+    description: In this campaign we will make 20 to 60 sec YOUR Ganpati Bappa Invite Short Videos, We make it Easy to SHARE and INVITE... 
+    link : ganpatiInvitaion.html
+    freeganpatibaapavideos:
+      Design1 : static\campaignData\Ganpti_Bappa_invit\Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4
+      Design2 : static\campaignData\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
+      Design3 : static\campaignData\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
+      Design4 : static\campaignData\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
+      Design5 : static\campaignData\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
 
-  freeganpatibaapamusic:
-    Music1 : 
-      title : Chinchpokli Cha Chintamani
-      link : https://www.youtube.com/watch?v=ZNuJniR-9oc
+    freeganpatibaapamusic:
+      Music1 : 
+        title : Chinchpokli Cha Chintamani
+        link : https://www.youtube.com/watch?v=ZNuJniR-9oc
 
-    Music2 : 
-      title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
-      link : https://www.youtube.com/watch?v=wEs5uyp8skY
+      Music2 : 
+        title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
+        link : https://www.youtube.com/watch?v=wEs5uyp8skY
 
-    Music3 : 
-      title : Bappa Morya Re
-      link : https://www.youtube.com/watch?v=LT1ezi5-mm0&list=PLGNJf4uoXBvWOzAYuUEltXTfl4nV5cXsq
+      Music3 : 
+        title : Bappa Morya Re
+        link : https://www.youtube.com/watch?v=LT1ezi5-mm0&list=PLGNJf4uoXBvWOzAYuUEltXTfl4nV5cXsq
 
-    Music4 : 
-      title : गणपती नॉनस्टॉप डीजे गाणी
-      link : https://www.youtube.com/watch?v=fwRentgNZB8
+      Music4 : 
+        title : गणपती नॉनस्टॉप डीजे गाणी
+        link : https://www.youtube.com/watch?v=fwRentgNZB8
 
-    Music5 : 
-      title : Ganeshotsav Mixtape 2024
-      link : https://www.youtube.com/watch?v=ldozoFhk6X0
+      Music5 : 
+        title : Ganeshotsav Mixtape 2024
+        link : https://www.youtube.com/watch?v=ldozoFhk6X0
 
-    Music6 : 
-      title : Bappachya Aagmanala Dj
-      link : https://www.youtube.com/watch?v=EZ6xT6ST3XA
+      Music6 : 
+        title : Bappachya Aagmanala Dj
+        link : https://www.youtube.com/watch?v=EZ6xT6ST3XA
 
-    Music7 : 
-      title : Nonstop Ganpati Dj
-      link : https://www.youtube.com/watch?v=oEZuglNjXrs
+      Music7 : 
+        title : Nonstop Ganpati Dj
+        link : https://www.youtube.com/watch?v=oEZuglNjXrs
 
-    Music8 : 
-      title : गणेश संकष्ट चतुर्थी स्पेशल डिजे गाणी
-      link : https://www.youtube.com/watch?v=sDSlGh2spm8
+      Music8 : 
+        title : गणेश संकष्ट चतुर्थी स्पेशल डिजे गाणी
+        link : https://www.youtube.com/watch?v=sDSlGh2spm8
 
-    Music9 : 
-      title : aamchya papani ganpati aala
-      link : https://www.youtube.com/shorts/CYrhk5_UZoA
+      Music9 : 
+        title : aamchya papani ganpati aala
+        link : https://www.youtube.com/shorts/CYrhk5_UZoA
 
-    Music10 : 
-      title : Ganpati Bappa Morya
-      link : https://www.youtube.com/shorts/SU4guIikq_8
+      Music10 : 
+        title : Ganpati Bappa Morya
+        link : https://www.youtube.com/shorts/SU4guIikq_8
 
-    Music11 : 
-      title : Bappa Morya
-      link : https://www.youtube.com/shorts/r0rOUDkvrbY
+      Music11 : 
+        title : Bappa Morya
+        link : https://www.youtube.com/shorts/r0rOUDkvrbY
 
-    Music12 : 
-      title : Deva Shree Ganesha
-      link : https://www.youtube.com/shorts/052bRN_ZrxU
+      Music12 : 
+        title : Deva Shree Ganesha
+        link : https://www.youtube.com/shorts/052bRN_ZrxU
 
-    Music13 : 
-      title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
-      link : https://www.youtube.com/watch?v=wEs5uyp8skY
+      Music13 : 
+        title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
+        link : https://www.youtube.com/watch?v=wEs5uyp8skY
 
-    Music14 : 
-      title : Ganpati Bappa
-      link : https://www.youtube.com/shorts/ZcMWuPXRAD0
+      Music14 : 
+        title : Ganpati Bappa
+        link : https://www.youtube.com/shorts/ZcMWuPXRAD0
 
-    Music15 : 
-      title : Ganpati Bappa Coming Soon
-      link : https://www.youtube.com/shorts/rBHyx9Z1vUY
+      Music15 : 
+        title : Ganpati Bappa Coming Soon
+        link : https://www.youtube.com/shorts/rBHyx9Z1vUY
 
-    Music16 : 
-      title : Ganpati Bappa Morya
-      link : https://www.youtube.com/shorts/lSXK3FkNHl4
+      Music16 : 
+        title : Ganpati Bappa Morya
+        link : https://www.youtube.com/shorts/lSXK3FkNHl4
 
-    Music17 : 
-      title : Shambhu Sutaya
-      link : https://www.youtube.com/watch?v=DOvG7MC8i7E
+      Music17 : 
+        title : Shambhu Sutaya
+        link : https://www.youtube.com/watch?v=DOvG7MC8i7E
 
-    Music18 : 
-      title : Majha Bappa | Deeya Wadkar | Sneha Mahadik | Pravin Koli
-      link : https://www.youtube.com/watch?v=jl9kHKoSijU
+      Music18 : 
+        title : Majha Bappa | Deeya Wadkar | Sneha Mahadik | Pravin Koli
+        link : https://www.youtube.com/watch?v=jl9kHKoSijU
 
-    Music19 : 
-      title : Bappa Naadkhula (बाप्पा नादखुळा)
-      link : https://www.youtube.com/watch?v=i3rdP8Aases
+      Music19 : 
+        title : Bappa Naadkhula (बाप्पा नादखुळा)
+        link : https://www.youtube.com/watch?v=i3rdP8Aases
 
-    Music20 : 
-      title : Nashik Dhol Feel The Bass ( Full Taasha Mix)
-      link : https://www.youtube.com/watch?v=Tv3knbp6ftw
+      Music20 : 
+        title : Nashik Dhol Feel The Bass ( Full Taasha Mix)
+        link : https://www.youtube.com/watch?v=Tv3knbp6ftw
 
-    Music21 : 
-      title : DHOL TAASHA
-      link : https://www.youtube.com/watch?v=DtYQ3oSubuw&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH
+      Music21 : 
+        title : DHOL TAASHA
+        link : https://www.youtube.com/watch?v=DtYQ3oSubuw&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH
 
-    Music22 : 
-      title : Tiger Dhun Dhol Tasha
-      link : https://www.youtube.com/watch?v=bKms_p5jjvo&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=2
+      Music22 : 
+        title : Tiger Dhun Dhol Tasha
+        link : https://www.youtube.com/watch?v=bKms_p5jjvo&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=2
 
-    Music23 : 
-      title : Dongri Ke Sultan Dhol Tasha
-      link : https://www.youtube.com/watch?v=CgS8i5FK1Ow&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=3
+      Music23 : 
+        title : Dongri Ke Sultan Dhol Tasha
+        link : https://www.youtube.com/watch?v=CgS8i5FK1Ow&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=3
 
-    Music24 : 
-      title : DHOL TAASHA (FULL BASS MIX)
-      link : https://www.youtube.com/watch?v=rDkoOzt3GQQ&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=4
+      Music24 : 
+        title : DHOL TAASHA (FULL BASS MIX)
+        link : https://www.youtube.com/watch?v=rDkoOzt3GQQ&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=4
 
-    Music25 : 
-      title : DHOL TAASHA (HIGH BASS)
-      link : https://www.youtube.com/watch?v=9y_I4tHDCPk&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=5
+      Music25 : 
+        title : DHOL TAASHA (HIGH BASS)
+        link : https://www.youtube.com/watch?v=9y_I4tHDCPk&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=5
 
-    Music26 : 
-      title : DHOL TAASHA (HIGH BASS 2)
-      link : https://www.youtube.com/watch?v=fWSseW07S8E&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=6
+      Music26 : 
+        title : DHOL TAASHA (HIGH BASS 2)
+        link : https://www.youtube.com/watch?v=fWSseW07S8E&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=6
+
+
+  ganpatibaapacampaign2:
+    title : Ganpati Bappa Short Invite Video
+    thumbnail : static\campaignData\Ganpti_Bappa_invit\ganpati icon.png
+    description: In this campaign we will make 20 to 60 sec YOUR Ganpati Bappa Invite Short Videos, We make it Easy to SHARE and INVITE... 
+    link : ganpatiInvitaion.html
+    freeganpatibaapavideos:
+      Design1 : static\campaignData\Ganpti_Bappa_invit\Festive%20Traditional%20Ganesh%20Chaturthi%20Instagram%20Story.mp4
+      Design2 : static\campaignData\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
+      Design3 : static\campaignData\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
+      Design4 : static\campaignData\Ganpti_Bappa_invit\Yellow and White Illustrative Ganesh Chaturthi Instagram Story.mp4
+      Design5 : static\campaignData\Ganpti_Bappa_invit\Red Festive Ganesh Chaturthi WhatsApp Status .mp4
+
+    freeganpatibaapamusic:
+      Music1 : 
+        title : Chinchpokli Cha Chintamani
+        link : https://www.youtube.com/watch?v=ZNuJniR-9oc
+
+      Music2 : 
+        title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
+        link : https://www.youtube.com/watch?v=wEs5uyp8skY
+
+      Music3 : 
+        title : Bappa Morya Re
+        link : https://www.youtube.com/watch?v=LT1ezi5-mm0&list=PLGNJf4uoXBvWOzAYuUEltXTfl4nV5cXsq
+
+      Music4 : 
+        title : गणपती नॉनस्टॉप डीजे गाणी
+        link : https://www.youtube.com/watch?v=fwRentgNZB8
+
+      Music5 : 
+        title : Ganeshotsav Mixtape 2024
+        link : https://www.youtube.com/watch?v=ldozoFhk6X0
+
+      Music6 : 
+        title : Bappachya Aagmanala Dj
+        link : https://www.youtube.com/watch?v=EZ6xT6ST3XA
+
+      Music7 : 
+        title : Nonstop Ganpati Dj
+        link : https://www.youtube.com/watch?v=oEZuglNjXrs
+
+      Music8 : 
+        title : गणेश संकष्ट चतुर्थी स्पेशल डिजे गाणी
+        link : https://www.youtube.com/watch?v=sDSlGh2spm8
+
+      Music9 : 
+        title : aamchya papani ganpati aala
+        link : https://www.youtube.com/shorts/CYrhk5_UZoA
+
+      Music10 : 
+        title : Ganpati Bappa Morya
+        link : https://www.youtube.com/shorts/SU4guIikq_8
+
+      Music11 : 
+        title : Bappa Morya
+        link : https://www.youtube.com/shorts/r0rOUDkvrbY
+
+      Music12 : 
+        title : Deva Shree Ganesha
+        link : https://www.youtube.com/shorts/052bRN_ZrxU
+
+      Music13 : 
+        title : Sampurna Jagala Tuzya Rupacha Rang Dila Deva
+        link : https://www.youtube.com/watch?v=wEs5uyp8skY
+
+      Music14 : 
+        title : Ganpati Bappa
+        link : https://www.youtube.com/shorts/ZcMWuPXRAD0
+
+      Music15 : 
+        title : Ganpati Bappa Coming Soon
+        link : https://www.youtube.com/shorts/rBHyx9Z1vUY
+
+      Music16 : 
+        title : Ganpati Bappa Morya
+        link : https://www.youtube.com/shorts/lSXK3FkNHl4
+
+      Music17 : 
+        title : Shambhu Sutaya
+        link : https://www.youtube.com/watch?v=DOvG7MC8i7E
+
+      Music18 : 
+        title : Majha Bappa | Deeya Wadkar | Sneha Mahadik | Pravin Koli
+        link : https://www.youtube.com/watch?v=jl9kHKoSijU
+
+      Music19 : 
+        title : Bappa Naadkhula (बाप्पा नादखुळा)
+        link : https://www.youtube.com/watch?v=i3rdP8Aases
+
+      Music20 : 
+        title : Nashik Dhol Feel The Bass ( Full Taasha Mix)
+        link : https://www.youtube.com/watch?v=Tv3knbp6ftw
+
+      Music21 : 
+        title : DHOL TAASHA
+        link : https://www.youtube.com/watch?v=DtYQ3oSubuw&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH
+
+      Music22 : 
+        title : Tiger Dhun Dhol Tasha
+        link : https://www.youtube.com/watch?v=bKms_p5jjvo&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=2
+
+      Music23 : 
+        title : Dongri Ke Sultan Dhol Tasha
+        link : https://www.youtube.com/watch?v=CgS8i5FK1Ow&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=3
+
+      Music24 : 
+        title : DHOL TAASHA (FULL BASS MIX)
+        link : https://www.youtube.com/watch?v=rDkoOzt3GQQ&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=4
+
+      Music25 : 
+        title : DHOL TAASHA (HIGH BASS)
+        link : https://www.youtube.com/watch?v=9y_I4tHDCPk&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=5
+
+      Music26 : 
+        title : DHOL TAASHA (HIGH BASS 2)
+        link : https://www.youtube.com/watch?v=fWSseW07S8E&list=PLeI4eR3a6IjU8b7j7qYjJ4SGnbJvt9ukH&index=6
+
+
+
+
+
+YoutubeProjects:
+
+  Youtube Project 1:
+    img_path: static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic2.jfif
+    desc: Cybersecurity Risk Assessment Tool Using Fuzzy Logic
+    tech: Fuzzy Logic, Risk Assessment, Cybersecurity
+    domain: Cyber Security
+    tags: majorproject cyberproject aimlproject desktopproject
+    youtubelink : https://www.youtube.com/
+
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Cybersecurity%20Risk%20Assessment%20Tool%20Using%20Fuzzy%20Logic
+
+    markdowndetails: |
+      # Project Description:
+      ======================<br><br>
+
+      The Cybersecurity Risk Assessment Tool Using Fuzzy Logic is designed to evaluate and mitigate cybersecurity risks in IT environments by leveraging fuzzy logic principles. This tool provides a sophisticated approach to risk assessment by handling uncertainty and imprecision inherent in evaluating cybersecurity threats.
+      <br>
+      <br>
+      Key features of the system include the use of fuzzy logic algorithms to model and assess risk factors based on various inputs, such as vulnerability data, threat intelligence, and potential impact. The system generates risk scores and recommendations for mitigation, helping organizations make informed decisions to enhance their cybersecurity posture.
+      <br>
+      <br>
+      The tool provides a comprehensive risk assessment and management solution. It offers user-friendly interfaces for configuring risk parameters, viewing assessment results, and generating reports for stakeholders.
+      <br>
+      <br>
+      Designed to improve the effectiveness of risk management strategies, the Cybersecurity Risk Assessment Tool Using Fuzzy Logic helps organizations address cybersecurity challenges with greater precision and adaptability.
+
+
+
+      <br>
+      <br>
+
+      # Project Features:
+      ======================<br><br>
+
+      - --> Utilizes fuzzy logic for risk assessment.
+      - --> Models and evaluates risk factors with uncertainty.
+      - --> Generates risk scores and mitigation recommendations.
+      - --> Provides user-friendly interfaces for configuration and reporting.
+      - --> Enhances decision-making for cybersecurity risk management.
+
+      <br>
+      <br>
+
+      # Problem Statement:
+      =====================<br>
+      Traditional risk assessment methods may struggle with the uncertainty and imprecision involved in evaluating cybersecurity threats. A fuzzy logic-based tool is needed to provide a more accurate and adaptable approach to risk assessment, improving the effectiveness of risk management strategies.
+
+
+
+      <br>
+      <br>
+
+      ## Report Contents:
+      =============<br>
+      - --> Block Diagram
+      - --> Flow Chart
+      - --> System Architecture
+      - --> Problem Statement
+      - --> Abstract
+      - --> Introduction
+      - --> Methodology
+      - --> Challenges and Solutions
+      - --> Performance Analysis
+      - --> Advantages
+      - --> Limitations
+      - --> Applications
+      - --> Future Scope
+      - --> Conclusion
+      - --> Output Images
+
+      <br>
+      <br>
+
+      ## Project Deliverables:
+      ===============<br>
+      - --> Project Software
+      - --> Project Report
+      - --> Project Simulation
+
+      <br>
+      <br>
+
+      ## Project Use Case:
+      ===================<br>
+      Evaluate and mitigate cybersecurity risks effectively by implementing a fuzzy logic-based tool that provides adaptable and precise risk assessment, helping organizations enhance their cybersecurity strategies and manage threats more effectively.
+
+
+    links: 
+      - static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic.png
+      - static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic2.jfif
+
+
+YoutubeComponentdetails:
+
+  Youtube componenet 1:
+    img_path: static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic2.jfif
+    desc: Cybersecurity Risk Assessment Tool Using Fuzzy Logic
+    tech: Fuzzy Logic, Risk Assessment, Cybersecurity
+    domain: Cyber Security
+    tags: majorproject cyberproject aimlproject desktopproject
+    youtubelink : https://www.youtube.com/
+
+    whatsappmsg: https://wa.me/8169239027?text=I'm%20interested%20in%20Cybersecurity%20Risk%20Assessment%20Tool%20Using%20Fuzzy%20Logic
+
+    markdowndetails: |
+      # Project Description:
+      ======================<br><br>
+
+      The Cybersecurity Risk Assessment Tool Using Fuzzy Logic is designed to evaluate and mitigate cybersecurity risks in IT environments by leveraging fuzzy logic principles. This tool provides a sophisticated approach to risk assessment by handling uncertainty and imprecision inherent in evaluating cybersecurity threats.
+      <br>
+      <br>
+      Key features of the system include the use of fuzzy logic algorithms to model and assess risk factors based on various inputs, such as vulnerability data, threat intelligence, and potential impact. The system generates risk scores and recommendations for mitigation, helping organizations make informed decisions to enhance their cybersecurity posture.
+      <br>
+      <br>
+      The tool provides a comprehensive risk assessment and management solution. It offers user-friendly interfaces for configuring risk parameters, viewing assessment results, and generating reports for stakeholders.
+      <br>
+      <br>
+      Designed to improve the effectiveness of risk management strategies, the Cybersecurity Risk Assessment Tool Using Fuzzy Logic helps organizations address cybersecurity challenges with greater precision and adaptability.
+
+
+
+      <br>
+      <br>
+
+      # Project Features:
+      ======================<br><br>
+
+      - --> Utilizes fuzzy logic for risk assessment.
+      - --> Models and evaluates risk factors with uncertainty.
+      - --> Generates risk scores and mitigation recommendations.
+      - --> Provides user-friendly interfaces for configuration and reporting.
+      - --> Enhances decision-making for cybersecurity risk management.
+
+      <br>
+      <br>
+
+      # Problem Statement:
+      =====================<br>
+      Traditional risk assessment methods may struggle with the uncertainty and imprecision involved in evaluating cybersecurity threats. A fuzzy logic-based tool is needed to provide a more accurate and adaptable approach to risk assessment, improving the effectiveness of risk management strategies.
+
+
+
+      <br>
+      <br>
+
+      ## Report Contents:
+      =============<br>
+      - --> Block Diagram
+      - --> Flow Chart
+      - --> System Architecture
+      - --> Problem Statement
+      - --> Abstract
+      - --> Introduction
+      - --> Methodology
+      - --> Challenges and Solutions
+      - --> Performance Analysis
+      - --> Advantages
+      - --> Limitations
+      - --> Applications
+      - --> Future Scope
+      - --> Conclusion
+      - --> Output Images
+
+      <br>
+      <br>
+
+      ## Project Deliverables:
+      ===============<br>
+      - --> Project Software
+      - --> Project Report
+      - --> Project Simulation
+
+      <br>
+      <br>
+
+      ## Project Use Case:
+      ===================<br>
+      Evaluate and mitigate cybersecurity risks effectively by implementing a fuzzy logic-based tool that provides adaptable and precise risk assessment, helping organizations enhance their cybersecurity strategies and manage threats more effectively.
+
+
+    links: 
+      - static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic.png
+      - static\project_img\software\Cybersecurity Risk Assessment Tool Using Fuzzy Logic\Cybersecurity Risk Assessment Tool Using Fuzzy Logic2.jfif
+
 

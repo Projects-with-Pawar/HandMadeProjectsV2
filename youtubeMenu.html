@@ -73,30 +73,18 @@
       var params = new URLSearchParams(window.location.search);
       // Select the element to display the message
       var messageElement = document.getElementById("message");
-      var softwareSection = document.getElementById("software");
-      var hardwareSection = document.getElementById("hardware");
-      var mechanicalSection = document.getElementById("mechanical");
-      var simulationSection = document.getElementById("simulation");
+      var softwareSection = document.getElementById("projects");
+      var hardwareSection = document.getElementById("componentdetails");
 
       // Check if the 'path' parameter is 'software'
-      if (params.get('path') === 'software') {
+      if (params.get('path') === 'projects') {
         //messageElement.textContent = "Software";
         softwareSection.style.display = 'block';
         messageElement.style.display = 'none';
       }
-      else if (params.get('path') === 'hardware') {
+      else if (params.get('path') === 'componentdetails') {
         //messageElement.textContent = "Hardware";
         hardwareSection.style.display = 'block';
-        messageElement.style.display = 'none';
-      }
-      else if (params.get('path') === 'mechanical') {
-        //messageElement.textContent = "Mechanical";
-        mechanicalSection.style.display = 'block';
-        messageElement.style.display = 'none';
-      }
-      else if (params.get('path') === 'simulation') {
-        //messageElement.textContent = "Simulation";
-        simulationSection.style.display = 'block';
         messageElement.style.display = 'none';
       }
       else {
@@ -106,7 +94,7 @@
     });
   </script>
 
-  <title>HandMadeProjects . Engennering Project</title>
+  <title>HandMadeProjects . YouTube Project</title>
 </head>
 
 <body id="body-container">
@@ -130,9 +118,9 @@
 
       <!-- Tabs on the Right - responsive -->
       <div class="hidden md:flex items-center space-x-10">
-        <a href="engenneringMenu.html?path=software"
+        <a href="youtubeMenu.html?path=software"
           class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Software Projects</a>
-        <a href="engenneringMenu.html?path=hardware"
+        <a href="youtubeMenu.html?path=hardware"
           class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Hardware Projects</a>
         <a href="#contact" class="text-xl text-gray-600 font-bold hover:underline hover:text-gray-900">Contact</a>
       </div>
@@ -168,31 +156,17 @@
     <!-- cards -->
     <div class="grid grid-cols-2 gap-4 mx-2 mt-2 md:mx-20 md:mx-20">
 
-      <a href="engenneringMenu.html?path=software">
+      <a href="youtubeMenu.html?path=projects">
         <div
           class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
-          <i class="fa-solid fa-code mr-2 text-4xl"></i><br>Software Projects
+          <i class="fa-solid fa-code mr-2 text-4xl"></i><br>Projects
         </div>
       </a>
 
-      <a href="engenneringMenu.html?path=hardware">
+      <a href="youtubeMenu.html?path=componentdetails">
         <div
           class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
-          <i class="fa-solid fa-bolt mr-2 text-4xl"></i><br>Hardware Projects
-        </div>
-      </a>
-
-      <a href="engenneringMenu.html?path=mechanical">
-        <div
-          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
-          <i class="fa-solid fa-wrench mr-2 text-4xl"></i><br>Mechanical Projects
-        </div>
-      </a>
-
-      <a href="engenneringMenu.html?path=simulation">
-        <div
-          class="border border-gray-400 py-8 text-center text-md md:text-2xl px-2 hover:text-white shadow-inner border-2 rounded-md hover:shadow-xl hover:bg-indigo-400 font-bold">
-          <i class="fa-solid fa-laptop mr-2 text-4xl"></i><br>Simulation Projects
+          <i class="fa-solid fa-bolt mr-2 text-4xl"></i><br>Component Details
         </div>
       </a>
 
@@ -206,61 +180,61 @@
 
 
 
-  <!-- Software -->
-  <section class="mysection md:mx-20 mt-20 my-4" id="software">
-    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Software Projects</div>
+  <!-- projects -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="projects">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Projects</div>
 
     <div class="mx-1 md:mx-0 text-xl md:text-2xl text-indigo-600 font-bold">Filters</div>
     <div class="mx-1 md:mx-0 grid grid-cols-4 md:grid-cols-6 gap-4 border rounded-md p-2 mb-10">
-      <a href="projectFilter.html?cat=software&tag=miniproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=miniproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Small</div>
       </a>
 
-      <a href="projectFilter.html?cat=software&tag=majorproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=majorproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Major</div>
       </a>
 
-      <a href="projectFilter.html?cat=software&tag=cyberproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=cyberproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Cyber</div>
       </a>
 
-      <a href="projectFilter.html?cat=software&tag=aimlproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=aimlproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           AI/ML</div>
       </a>
 
-      <a href="projectFilter.html?cat=software&tag=desktopproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=desktopproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Desktop S/W</div>
       </a>
 
-      <a href="projectFilter.html?cat=software&tag=mobileappproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=mobileappproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Mobile App</div>
       </a>
       
-      <a href="projectFilter.html?cat=software&tag=webappproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=webappproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Web App</div>
       </a>
       
-      <a href="projectFilter.html?cat=software&tag=ganproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=ganproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           GANs</div>
       </a>
       
-      <a href="projectFilter.html?cat=software&tag=llmproject">
+      <a href="projectFilter.html?cat=YoutubeProjects&tag=llmproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           LLMs</div>
@@ -268,77 +242,78 @@
     
     </div>
 
-    <div id="softwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+    <div id="projectsItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
       <!-- Dynamic content will be added here --></div>
   </section>
 
-  <!-- Hardware -->
-  <section class="mysection md:mx-20 mt-20 my-4" id="hardware">
-    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Hardware Projects</div>
+
+  <!-- componentdetails -->
+  <section class="mysection md:mx-20 mt-20 my-4" id="componentdetails">
+    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Component Details</div>
 
     <div class="mx-1 md:mx-0 text-xl md:text-2xl text-indigo-600 font-bold">Filters</div>
     <div class="mx-1 md:mx-0 grid grid-cols-4 md:grid-cols-8 gap-4 border rounded-md p-2 mb-10">
-      <a href="projectFilter.html?cat=hardware&tag=miniproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=miniproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Small</div>
       </a>
 
-      <a href="projectFilter.html?cat=hardware&tag=majorproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=majorproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Major</div>
       </a>
 
-      <a href="projectFilter.html?cat=hardware&tag=iotproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=iotproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           IoT</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=stmproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=stmproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           STM</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=plcproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=plcproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           PLC</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=fpgaproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=fpgaproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           FPGA</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=esp32project">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=esp32project">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           ESP32</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=esp32project">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=esp32project">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           NodeMCU</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=esp32project">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=esp32project">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           ESP8266</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=esp32project">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=esp32project">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Attiny</div>
       </a>
       
-      <a href="projectFilter.html?cat=hardware&tag=arduinoproject">
+      <a href="projectFilter.html?cat=YoutubeComponentdetails&tag=arduinoproject">
         <div
           class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
           Arduino</div>
@@ -353,62 +328,10 @@
       <p class="ml-4">-> PLC : Programmable Logic Controller</p>
     </div>
 
-    <div id="hardwareItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
+    <div id="componentdetailsItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
       <!-- Dynamic content will be added here --></div>
   </section>
 
-  <!-- Mechanical -->
-  <section class="mysection md:mx-20 mt-20 my-4" id="mechanical">
-    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Mechanical Projects</div>
-
-    <div class="mx-1 md:mx-0 text-xl md:text-2xl text-indigo-600 font-bold">Filters</div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-      <a href="projectFilter.html?cat=mechanical&tag=miniproject">
-        <div
-          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
-          Mini Project</div>
-      </a>
-
-      <a href="projectFilter.html?cat=mechanical&tag=majorproject">
-        <div
-          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
-          Major Project</div>
-      </a>
-
-    </div>
-
-    <div id="mechanicalItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
-      <!-- Dynamic content will be added here --></div>
-  </section>
-
-  <!-- Simulation -->
-  <section class="mysection md:mx-20 mt-20 my-4" id="simulation">
-    <div class="mx-2 text-mono text-2xl font-bold text-center py-2">Simulation Projects</div>
-
-    <div class="mx-1 md:mx-0 text-xl md:text-2xl text-indigo-600 font-bold">Filters</div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 border rounded-md p-2 mb-10">
-      <a href="projectFilter.html?cat=simulation&tag=miniproject">
-        <div
-          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
-          Mini Project</div>
-      </a>
-
-      <a href="projectFilter.html?cat=simulation&tag=majorproject">
-        <div
-          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
-          Major Project</div>
-      </a>
-
-      <a href="projectFilter.html?cat=simulation&tag=iotproject">
-        <div
-          class="text-md bg-indigo-400 rounded-md text-center text-white font-bold py-2 hover:bg-indigo-100 hover:text-black">
-          IoT Project</div>
-      </a>
-    </div>
-
-    <div id="simulationItems" class="grid grid-cols-1 md:grid-cols-4 gap-4 px-1">
-      <!-- Dynamic content will be added here --></div>
-  </section>
 
 
 
@@ -469,142 +392,83 @@
       
     </div>
 
-    <script>
 
-      // Load YAML data from file
-      fetch('static/data.yaml')
-        .then(response => response.text())
-        .then(yamlData => {
-          const data = jsyaml.load(yamlData);
+  <script>
 
-          const foodItemsContainer = document.getElementById('hardwareItems');
+    // Load YAML data from file
+    fetch('static/data.yaml')
+      .then(response => response.text())
+      .then(yamlData => {
+        const data = jsyaml.load(yamlData);
 
-          // Loop through the data and render each item
-          for (const itemName in data.hardware) {
-            const item = data.hardware[itemName];
+        const projectsItemsContainer = document.getElementById('projectsItems');
 
-            // Create the HTML structure for each item
-            const itemHtml = `
-              <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
-                <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
-                <div class="text-xl font-bold text-center h-14">${itemName}</div>
-                <div class="my-1 h-32">
-                  <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
-                  <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
-                </div>
-                <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
-                  
-                  <a href="projectDetails.html?domain=hardware&project=${itemName}">
-                    <b class="text-sm">${item.domain}</b>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
-                  </a>
-                </div>
+        // Loop through the data and render each item
+        for (const itemName in data.YoutubeProjects) {
+          const item = data.YoutubeProjects[itemName];
+
+          // Create the HTML structure for each item
+          const itemHtml = `
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
+              <div class="text-xl font-bold text-center h-14">${itemName}</div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
-            `;
-
-            // Append the HTML to the container
-            foodItemsContainer.innerHTML += itemHtml;
-          }
-
-
-
-          const seasonalItemsContainer = document.getElementById('softwareItems');
-          // Loop through the data and render each item
-          for (const itemName in data.software) {
-            const item = data.software[itemName];
-
-            // Create the HTML structure for each item
-            const itemHtml = `
-              <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
-                <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
-                <div class="text-xl font-bold text-center h-14">${itemName}</div>
-                <div class="my-1 h-32">
-                  <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
-                  <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
-                </div>
-                <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
-                  
-                  <a href="projectDetails.html?domain=software&project=${itemName}">
-                    <b class="text-sm">${item.domain}</b>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
-                  </a>
-                </div>
+              <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
+                
+                <a href="projectDetails.html?domain=YoutubeProjects&project=${itemName}">
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
+                </a>
               </div>
-            `;
+            </div>
+          `;
 
-            // Append the HTML to the container
-            seasonalItemsContainer.innerHTML += itemHtml;
-          }
+          // Append the HTML to the container
+          projectsItemsContainer.innerHTML += itemHtml;
+        }
 
 
-          const mechItemsContainer = document.getElementById('mechanicalItems');
-          // Loop through the data and render each item
-          for (const itemName in data.mechanical) {
-            const item = data.mechanical[itemName];
 
-            // Create the HTML structure for each item
-            const itemHtml = `
-              <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
-                <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
-                <div class="text-xl font-bold text-center h-14">${itemName}</div>
-                <div class="my-1 h-32">
-                  <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
-                  <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
-                </div>
-                <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
-                  
-                  <a href="projectDetails.html?domain=mechanical&project=${itemName}">
-                    <b class="text-sm">${item.domain}</b>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
-                  </a>
-                </div>
+        const componentdetailsItemsContainer = document.getElementById('componentdetailsItems');
+        // Loop through the data and render each item
+        for (const itemName in data.YoutubeComponentdetails) {
+          const item = data.YoutubeComponentdetails[itemName];
+
+          // Create the HTML structure for each item
+          const itemHtml = `
+            <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
+              <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
+              <div class="text-xl font-bold text-center h-14">${itemName}</div>
+              <div class="my-1 h-32">
+                <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
+                <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
               </div>
-            `;
-
-            // Append the HTML to the container
-            mechItemsContainer.innerHTML += itemHtml;
-          }
-
-
-          const simuItemsContainer = document.getElementById('simulationItems');
-          // Loop through the data and render each item
-          for (const itemName in data.simulation) {
-            const item = data.simulation[itemName];
-
-            // Create the HTML structure for each item
-            const itemHtml = `
-              <div class="rounded-md border border-gray-700 my-1 p-2 hover:shadow-md">
-                <img src="${item.img_path}" alt="${itemName}" class="h-52 w-auto border-4 rounded-md mx-auto mb-1"> 
-                <div class="text-xl font-bold text-center h-14">${itemName}</div>
-                <div class="my-1 h-32">
-                  <div class="text-left text-sm"><b>Desc :</b> ${item.desc} </div>
-                  <div class="text-left text-sm"><b>Tech :</b> ${item.tech}</div>
-                </div>
-                <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
-                  
-                  <a href="projectDetails.html?domain=simulation&project=${itemName}">
-                    <b class="text-sm">${item.domain}</b>
-                    <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
-                  </a>
-                </div>
+              <div  class="text-center text-md border p-1 text-2xl border-2 rounded-md border-green-500 hover:shadow-xl hover:shadow-green-100">
+                
+                <a href="projectDetails.html?domain=YoutubeComponentdetails&project=${itemName}">
+                  <b class="text-sm">${item.domain}</b>
+                  <i class="fa-solid fa-arrow-up-right-from-square ml-10 text-green-700 text-xl px-2 py-1"></i>
+                </a>
               </div>
-            `;
+            </div>
+          `;
 
-            // Append the HTML to the container
-            simuItemsContainer.innerHTML += itemHtml;
-          }
+          // Append the HTML to the container
+          componentdetailsItemsContainer.innerHTML += itemHtml;
+        }
+
+      })
+      .catch(error => console.error('Error loading YAML data:', error));
 
 
-        })
-        .catch(error => console.error('Error loading YAML data:', error));
+    // JavaScript to toggle mobile menu visibility
+    document.getElementById('mobileMenuToggle').addEventListener('click', function () {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
 
-
-      // JavaScript to toggle mobile menu visibility
-      document.getElementById('mobileMenuToggle').addEventListener('click', function () {
-        document.getElementById('mobileMenu').classList.toggle('hidden');
-      });
-
-    </script>
-
+  </script>
 </body>
 </html>
